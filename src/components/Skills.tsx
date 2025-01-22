@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaVolumeUp,FaWaveSquare ,FaDeaf, FaMicrophone, FaHeadphonesAlt, FaSlidersH, FaUserAlt, FaCogs, FaEquals, FaAdjust, FaVolumeMute, FaLevelUpAlt, FaSyncAlt, FaFilter, FaWind, FaSignal, FaMusic } from "react-icons/fa";
+import { FaVolumeUp,FaWaveSquare ,FaDeaf, FaMicrophone, FaHeadphonesAlt, FaSlidersH,  FaMusic } from "react-icons/fa";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 

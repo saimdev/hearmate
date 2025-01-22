@@ -4,9 +4,6 @@ import {
   FaBriefcase,
   FaSmile,
   FaLaptopCode,
-  FaEye,
-  FaThumbsUp,
-  FaBook,
 } from "react-icons/fa";
 
 const AboutMe: React.FC = () => {

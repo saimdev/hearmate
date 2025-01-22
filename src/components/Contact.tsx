@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
     >
       <div className="relative grid w-full grid-cols-1 overflow-hidden bg-white shadow-lg max-w-7xl dark:bg-gray-800 rounded-xl lg:grid-cols-2 animate-fade-in">
         {/* Contact Info Section */}
-        <div className="relative p-8 text-white shadow-lg lg:p-12 bg-gradient-to-br from-teal-600 via-cyan-500 to-blue-600 rounded-l-xl">
+        <div className="relative p-8 text-white shadow-lg lg:p-12 bg-gradient-to-br from-blue-600 via-blue-500 to-blue-600 rounded-l-xl">
           <h3 className="mb-6 text-4xl font-extrabold tracking-wide">
             Let's Get in Touch
           </h3>
@@ -83,7 +83,7 @@ const Contact: React.FC = () => {
 
           {/* Decorative Floating Elements */}
           <div className="absolute w-48 h-48 bg-white rounded-full opacity-10 blur-2xl -top-16 -left-16"></div>
-          <div className="absolute w-32 h-32 rounded-full bg-cyan-400 opacity-20 blur-xl -bottom-20 -right-20"></div>
+          <div className="absolute w-32 h-32 rounded-full bg-blue-400 opacity-20 blur-xl -bottom-20 -right-20"></div>
           <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black opacity-10"></div>
         </div>
 
@@ -97,7 +97,7 @@ const Contact: React.FC = () => {
               <input
                 type="text"
                 id="name"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring focus:ring-teal-300 dark:bg-gray-700 dark:text-white dark:border-gray-600"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-white dark:border-gray-600"
                 placeholder="Your Name"
               />
             </div>
@@ -108,7 +108,7 @@ const Contact: React.FC = () => {
               <input
                 type="email"
                 id="email"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring focus:ring-teal-300 dark:bg-gray-700 dark:text-white dark:border-gray-600"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-white dark:border-gray-600"
                 placeholder="Your Email"
               />
             </div>
@@ -119,7 +119,7 @@ const Contact: React.FC = () => {
               <input
                 type="text"
                 id="subject"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring focus:ring-teal-300 dark:bg-gray-700 dark:text-white dark:border-gray-600"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-white dark:border-gray-600"
                 placeholder="Subject"
               />
             </div>
@@ -130,13 +130,13 @@ const Contact: React.FC = () => {
               <textarea
                 id="message"
                 rows={5}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring focus:ring-teal-300 dark:bg-gray-700 dark:text-white dark:border-gray-600"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-white dark:border-gray-600"
                 placeholder="Your Message"
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full py-3 font-medium text-white transition duration-300 transform bg-teal-500 rounded-lg hover:bg-teal-600 hover:scale-105"
+              className="w-full py-3 font-medium text-white transition duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-600 hover:scale-105"
             >
               Send Message
             </button>

@@ -3,7 +3,7 @@ import HeroSection from "../components/HeroSection";
 import AboutMe from "../components/AboutMe";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
-import Experience from "../components/Experience";
+// import Experience from "../components/Experience";
 import Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
 
@@ -22,9 +22,9 @@ const Home: React.FC = () => {
       <div className="">
         <Projects />
       </div>
-      <div className="">
+      {/* <div className="">
         <Experience />
-      </div>
+      </div> */}
       <div className="">
         <Testimonials />
       </div>

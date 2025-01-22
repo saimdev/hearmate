@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLocationArrow } from "react-icons/fa";
+import { FaLocationArrow } from "react-icons/fa";
 
 interface ProjectProps {
   name: string;
@@ -7,7 +7,7 @@ interface ProjectProps {
   description: string;
   tools: string[];
   liveLink?: string;
-  repoLink?: string;
+  location?: string;
   image: string;
 }
 
@@ -17,7 +17,8 @@ const ProjectCard: React.FC<ProjectProps> = ({
   description,
   // tools,
   liveLink,
-  repoLink,
+  // repoLink,
+  location,
   image,
 }) => {
   return (
@@ -27,7 +28,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
         <img
           src={image}
           alt={name}
-          className="object-cover w-full h-48 transition-transform duration-500 rounded-t-xl group-hover:scale-110"
+          className="object-cover w-full h-full transition-transform duration-500 rounded-t-xl group-hover:scale-110"
         />
         <div className="absolute inset-0 opacity-75 bg-gradient-to-t from-gray-900 via-transparent to-transparent group-hover:opacity-50"></div>
       </div>
@@ -59,12 +60,12 @@ const ProjectCard: React.FC<ProjectProps> = ({
               href={liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-blue-500 transition hover:text-blue-400 dark:text-cyan-400 dark:hover:text-cyan-300"
+              className="flex items-center gap-2 text-blue-500 transition hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300"
             >
-              <FaLocationArrow /> Live Demo
+              <FaLocationArrow /> {location}
             </a>
           )}
-          {repoLink && (
+          {/* {repoLink && (
             <a
               href={repoLink}
               target="_blank"
@@ -73,12 +74,12 @@ const ProjectCard: React.FC<ProjectProps> = ({
             >
               <FaGithub /> GitHub Repo
             </a>
-          )}
+          )} */}
         </div>
       </div>
 
       {/* Floating Badge */}
-      <div className="absolute px-3 py-1 text-xs font-semibold text-white rounded-full shadow-md top-4 right-4 bg-gradient-to-r from-teal-500 to-cyan-600">
+      <div className="absolute px-3 py-1 text-xs font-semibold text-white rounded-full shadow-md top-4 right-4 bg-gradient-to-r from-blue-500 to-blue-600">
         Featured
       </div>
     </div>

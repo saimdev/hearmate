@@ -16,7 +16,7 @@ const Header: React.FC = () => {
       
       <div className="flex items-center">
       <img src={logo} alt="" style={{width:'70px', borderRadius:'10px'}} className="mx-2"/>
-        {/* <h1 className="text-2xl font-extrabold md:text-3xl text-cyan-500 dark:text-teal-300">
+        {/* <h1 className="text-2xl font-extrabold md:text-3xl text-blue-500 dark:text-blue-300">
           Portfolio
         </h1> */}
       </div>
@@ -39,8 +39,8 @@ const Header: React.FC = () => {
             smooth
             duration={500}
             spy
-            activeClass="text-cyan-500 dark:text-teal-300 font-bold border-b-2 border-cyan-500 dark:border-teal-300"
-            className="transition duration-300 cursor-pointer hover:text-cyan-400 dark:hover:text-teal-400"
+            activeClass="text-blue-500 dark:text-blue-300 font-bold border-b-2 border-blue-500 dark:border-blue-300"
+            className="transition duration-300 cursor-pointer hover:text-blue-400 dark:hover:text-blue-400"
           >
             {link.label}
           </ScrollLink>
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
         <ThemeToggle />
         {/* Mobile Menu Toggle */}
         <button
-          className="flex items-center justify-center w-10 h-10 text-2xl md:hidden text-cyan-500 dark:text-teal-300"
+          className="flex items-center justify-center w-10 h-10 text-2xl md:hidden text-blue-500 dark:text-blue-300"
           onClick={toggleMobileMenu}
           aria-label="Toggle mobile menu"
         >
@@ -83,8 +83,8 @@ const Header: React.FC = () => {
                 smooth
                 duration={500}
                 spy
-                activeClass="text-cyan-500 dark:text-teal-300 font-bold"
-                className="transition duration-300 cursor-pointer hover:text-cyan-400 dark:hover:text-teal-400"
+                activeClass="text-blue-500 dark:text-blue-300 font-bold"
+                className="transition duration-300 cursor-pointer hover:text-blue-400 dark:hover:text-blue-400"
                 onClick={() => setIsMobileMenuOpen(false)} // Close menu on click
               >
                 {link.label}

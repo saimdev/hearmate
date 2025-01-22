@@ -92,7 +92,7 @@ const Skills: React.FC = () => {
               {cards.map((card: { icon: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; description: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; }, cardIndex: React.Key | null | undefined) => (
                 <div
                   key={cardIndex}
-                  className="flex flex-col items-center p-6 mx-3 text-center transition-all duration-300 transform rounded-lg shadow-lg bg-white hover:scale-105"
+                  className="flex flex-col items-center p-6 mx-3 text-center transition-all duration-300 transform rounded-lg shadow-lg bg-white hover:scale-105 dark:text-blue-300 dark:bg-gray-900"
                 >
                   <div className="mb-4 text-4xl text-blue-500">{card.icon}</div>
                   <h4 className="text-xl font-bold">{card.title}</h4>

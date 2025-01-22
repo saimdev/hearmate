@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
-import PortfolioImg from "../assets/Projects/portfolio.png";
-import EcommerceImg from "../assets/Projects/ecommerce.png";
-import ChatAppImg from "../assets/Projects/ChatApp.png";
+import doctor1 from "../assets/images/doctor1.jpg";
+// import EcommerceImg from "../assets/Projects/ecommerce.png";
+// import ChatAppImg from "../assets/Projects/ChatApp.png";
 const Projects: React.FC = () => {
   const [darkMode, setDarkMode] = useState(
     document.documentElement.classList.contains("dark")
@@ -26,27 +26,27 @@ const Projects: React.FC = () => {
         "I have been using HearMate for more than a month, and I am extremely satisfied with its performance, to the extent that I have forgotten where I placed my expensive hearing aid. I would certainly endorse HearMate.",
       tools: ["React", "TypeScript", "Tailwind CSS"],
       liveLink: "https://myportfolio.com",
-      repoLink: "https://github.com/myportfolio",
-      image: PortfolioImg,
+      location: "UAE",
+      image: doctor1,
     },
     {
-      name: "E-commerce Platform",
-      profession: "",
+      name: "Michael",
+      profession: "ENT Specialist",
       description:
-        "A full-stack e-commerce platform with a seamless shopping experience.",
+        "For several years, I experienced hearing difficulties but hesitated to use hearing aids, as I found them to be quite unnatural. However, the experience of using HearMate was entirely intuitive. I just downloaded the application and started hearing better.",
       tools: ["Node.js", "Express", "React", "MongoDB"],
       liveLink: "https://myecommerce.com",
-      repoLink: "https://github.com/myecommerce",
-      image: EcommerceImg,
+      location: "USA",
+      image: doctor1,
     },
     {
-      name: "Chat Application",
-      profession: "",
-      description: "A real-time chat application with WebSocket integration.",
+      name: "Cristina",
+      profession: "ENT Specialist",
+      description: " I have consistently experienced discomfort when using hearing aids. However, HearMate provided a remarkably discreet solution that required no extra items to manage. From the very first use, it felt like the perfect fit. Kudos to HearMate.",
       tools: ["React", "Socket.io", "Node.js"],
       liveLink: "https://mychatapp.com",
-      repoLink: "https://github.com/mychatapp",
-      image: ChatAppImg,
+      location: "Spain",
+      image: doctor1,
     },
   ];
 

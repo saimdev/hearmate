@@ -32,19 +32,21 @@ const Footer: React.FC = () => {
       <div className="mx-auto text-center max-w-7xl">
         {/* Logo/Brand Name */}
         <h3 className="mb-4 text-2xl font-extrabold tracking-wide sm:text-3xl">
-          My Portfolio
+          HearMate
         </h3>
 
         {/* Navigation Links */}
         <nav className="mb-6">
           <ul className="flex flex-col justify-center gap-4 text-base font-medium md:flex-row md:gap-8">
             {[
-              { to: 'about', label: 'About' },
-              { to: 'skills', label: 'Skills' },
-              { to: 'projects', label: 'Projects' },
-              { to: 'experience', label: 'Experience' },
-              { to: 'testimonials', label: 'Testimonials' },
-              { to: 'contact', label: 'Contact' },
+              { to: "hero", label: "Home" },
+              { to: "solution", label: "Solution" },
+              { to: "product", label: "Product" },
+              { to: "features", label: "Features" },
+              { to: "approvals", label: "Approvals" },
+              { to: "pricing", label: "Pricing" },
+              { to: "blogs", label: "Blogs" },
+              { to: "contact", label: "Contact" },
             ].map((link) => (
               <li key={link.to}>
                 <ScrollLink
@@ -53,8 +55,8 @@ const Footer: React.FC = () => {
                   duration={500}
                   className={`cursor-pointer ${
                     darkMode
-                      ? 'hover:text-teal-300'
-                      : 'hover:text-cyan-600'
+                      ? 'hover:text-blue-300'
+                      : 'hover:text-blue-600'
                   } transition duration-300`}
                 >
                   {link.label}
@@ -75,8 +77,8 @@ const Footer: React.FC = () => {
                   href="#"
                   className={`transform transition duration-300 hover:scale-125 ${
                     darkMode
-                      ? 'text-gray-300 hover:text-teal-400'
-                      : 'text-cyan-600 hover:text-cyan-500'
+                      ? 'text-gray-300 hover:text-blue-400'
+                      : 'text-blue-600 hover:text-blue-500'
                   }`}
                   aria-label={Icon.name}
                 >
@@ -91,7 +93,7 @@ const Footer: React.FC = () => {
         <div className="absolute inset-0 pointer-events-none">
           {!darkMode && (
             <>
-              <div className="absolute rounded-full bg-gradient-to-br from-cyan-300 to-transparent opacity-20 w-72 h-72 sm:w-96 sm:h-96 -top-20 -left-20 animate-pulse"></div>
+              <div className="absolute rounded-full bg-gradient-to-br from-blue-300 to-transparent opacity-20 w-72 h-72 sm:w-96 sm:h-96 -top-20 -left-20 animate-pulse"></div>
               <div className="absolute bottom-0 right-0 rounded-full bg-gradient-to-br from-blue-300 to-transparent opacity-20 w-72 h-72 sm:w-96 sm:h-96 animate-pulse"></div>
             </>
           )}
@@ -99,7 +101,10 @@ const Footer: React.FC = () => {
 
         {/* Copyright */}
         <p className="mt-4 text-xs sm:mt-6 sm:text-sm">
-          &copy; {new Date().getFullYear()} My Portfolio. All Rights Reserved.
+          &copy; {new Date().getFullYear()} HearMate. All Rights Reserved.
+        </p>
+        <p className="text-xs sm:text-sm">
+         Powered by <a href="https://thecorise.com" target='_blank' className='text-dectoration-none text-blue-500'>Corise</a>
         </p>
       </div>
     </footer>

@@ -30,21 +30,21 @@ const Testimonials: React.FC = () => {
       name: 'John Doe',
       role: 'CEO, Tech Solutions',
       message:
-        'Working with Dilawar Khan was an absolute pleasure. Their attention to detail and dedication to delivering exceptional results is unmatched. Highly recommend!',
+        'I have been using HearMate for more than a month, and I am extremely satisfied with its performance, to the extent that I have forgotten where I placed my expensive hearing aid.',
       image: User1Img,
     },
     {
       name: 'Jane Smith',
       role: 'Manager, Creative Studio',
       message:
-        'Dilawar Khan is a true professional. Their innovative ideas and ability to execute complex projects made a significant impact on our success.',
+        'I have been using HearMate for more than a month, and I am extremely satisfied with its performance, to the extent that I have forgotten where I placed my expensive hearing aid.',
       image: User2Img,
     },
     {
       name: 'Alice Brown',
       role: 'Colleague',
       message:
-        'Collaborating with Dilawar Khan was a fantastic experience. Their expertise and positive attitude made every project enjoyable and successful.',
+        'I have been using HearMate for more than a month, and I am extremely satisfied with its performance, to the extent that I have forgotten where I placed my expensive hearing aid.',
       image: User3Img,
     },
   ];
@@ -62,7 +62,7 @@ const Testimonials: React.FC = () => {
       <div className="absolute inset-0 pointer-events-none">
         {!darkMode && (
           <>
-            <div className="absolute rounded-full bg-gradient-to-br from-cyan-300 to-transparent opacity-20 w-96 h-96 -top-20 -left-20 animate-pulse"></div>
+            <div className="absolute rounded-full bg-gradient-to-br from-blue-300 to-transparent opacity-20 w-96 h-96 -top-20 -left-20 animate-pulse"></div>
             <div className="absolute rounded-full bg-gradient-to-br from-blue-300 to-transparent opacity-20 w-96 h-96 bottom-10 right-10 animate-pulse"></div>
           </>
         )}
@@ -93,9 +93,9 @@ const Testimonials: React.FC = () => {
                 </div>
               </div>
               <div className="relative">
-                <FaQuoteLeft className="absolute left-0 text-3xl -top-4 text-cyan-500 dark:text-cyan-400" />
+                <FaQuoteLeft className="absolute left-0 text-3xl -top-4 text-blue-500 dark:text-blue-400" />
                 <p className="pl-10 pr-6 mt-4 italic leading-relaxed">{testimonial.message}</p>
-                <FaQuoteRight className="absolute bottom-0 right-0 text-3xl translate-x-4 translate-y-2 text-cyan-500 dark:text-cyan-400" />
+                <FaQuoteRight className="absolute bottom-0 right-0 text-3xl translate-x-4 translate-y-2 text-blue-500 dark:text-blue-400" />
               </div>
             </div>
           ))}

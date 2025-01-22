@@ -6,8 +6,8 @@ import carousal2 from "../assets/images/carousel_2.png";
 
 const HeroSection: React.FC = () => {
   const images = [
-    { src: {carousal1}, alt: "Image 1" },
-    { src: {carousal2}, alt: "Image 2" },
+    { src: carousal1, alt: "Image 1" },
+    { src: carousal2, alt: "Image 2" },
   ];
 
   return (

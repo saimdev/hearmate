@@ -5,6 +5,7 @@ import {
   FaSmile,
   FaLaptopCode,
 } from "react-icons/fa";
+import carousal1 from "../assets/images/carousal_1.png";
 
 const AboutMe: React.FC = () => {
   const [darkMode, setDarkMode] = useState(
@@ -116,7 +117,7 @@ favorite music.
               darkMode ? "bg-gray-800 text-gray-100" : "bg-white text-gray-800"
             }`}
           >
-            <img src="/src/assets/images/carousal_1.png" alt="" className="w-full object-cover h-[100]"/>
+            <img src={carousal1} alt="" className="w-full object-cover h-[100]"/>
           </div>
         </div>
 

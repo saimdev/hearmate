@@ -1,11 +1,13 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import carousal1 from "../assets/images/carousal_1.png";
+import carousal2 from "../assets/images/carousel_2.png";
 
 const HeroSection: React.FC = () => {
   const images = [
-    { src: "/src/assets/images/carousal_1.png", alt: "Image 1" },
-    { src: "/src/assets/images/carousel_2.png", alt: "Image 2" },
+    { src: {carousal1}, alt: "Image 1" },
+    { src: {carousal2}, alt: "Image 2" },
   ];
 
   return (

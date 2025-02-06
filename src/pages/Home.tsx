@@ -7,6 +7,7 @@ import Projects from "../components/Projects";
 import Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
 import DownloadNow from "../components/DownloadNow";
+import PricingSection from "../components/PricingSection";
 
 const Home: React.FC = () => {
   return (
@@ -26,6 +27,9 @@ const Home: React.FC = () => {
       {/* <div className="">
         <Experience />
       </div> */}
+      <div className="">
+        <PricingSection/>
+      </div>
       <div className="">
         <Testimonials />
       </div>

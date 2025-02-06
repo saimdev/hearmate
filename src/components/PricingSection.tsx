@@ -55,7 +55,8 @@ const PricingSection: React.FC = () => {
         darkMode
           ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-gray-100'
           : 'bg-gradient-to-br from-blue-100 via-indigo-50 to-white text-gray-800'
-      }`}>
+      }`}
+      id="pricing">
       <div className="max-w-6xl px-4 mx-auto md:px-6">
         <h2 className="text-3xl font-extrabold text-center mb-8 md:text-4xl lg:text-5xl">
           Pricing

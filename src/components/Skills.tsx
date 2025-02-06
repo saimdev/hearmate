@@ -88,7 +88,7 @@ const Skills: React.FC = () => {
           className="w-full"
         >
           {carousals.map((cards, carouselIndex) => (
-            <div key={carouselIndex} className="grid py-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
+            <div key={carouselIndex} className="grid py-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
               {cards.map((card: { icon: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; description: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; }, cardIndex: React.Key | null | undefined) => (
                 <div
                   key={cardIndex}

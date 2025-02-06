@@ -6,6 +6,7 @@ import Projects from "../components/Projects";
 // import Experience from "../components/Experience";
 import Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
+import DownloadNow from "../components/DownloadNow";
 
 const Home: React.FC = () => {
   return (
@@ -27,6 +28,9 @@ const Home: React.FC = () => {
       </div> */}
       <div className="">
         <Testimonials />
+      </div>
+      <div className="">
+        <DownloadNow />
       </div>
       <div className="">
         <Contact />

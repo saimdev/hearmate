@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import doctor1 from "../assets/images/doctor1.jpg";
+import videoSrc from "../assets/testimonial1.mp4";
 // import EcommerceImg from "../assets/Projects/ecommerce.png";
 // import ChatAppImg from "../assets/Projects/ChatApp.png";
 const Projects: React.FC = () => {
   const [darkMode, setDarkMode] = useState(
     document.documentElement.classList.contains("dark")
   );
+
+  const doctorName = "Dr. John";
+  const doctorDesignation = "ENT Specialist";
+  const contentText = "HearMate is a revolutionary app that offers an affordable and accessible alternative to traditional hearing aids. Using your existing AirPods or headphones, HearMate enhances surrounding sounds and voices while effectively reducing unwanted noise.  Dr. John, a leading ENT Specialist, recommends HearMate for its innovative approach to hearing assistance.";
 
   useEffect(() => {
     const observer = new MutationObserver(() => {
@@ -80,6 +85,23 @@ const Projects: React.FC = () => {
           ))}
         </div>
       </div>
+      <div className="relative max-w-6xl px-4 mx-auto md:px-6 py-12"> {/* Added padding for spacing */}
+      <h2 className="mb-12 text-3xl font-extrabold text-center md:text-4xl lg:text-5xl">
+        Hear From the Experts
+      </h2>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8"> {/* Grid for responsiveness */}
+        <div className="relative aspect-video"> {/* Maintain aspect ratio */}
+          <video src={videoSrc} controls className="w-full h-full object-cover"></video>
+        </div>
+        <div className="flex flex-col justify-center"> {/* Center content vertically */}
+          <div className="bg-white p-6 rounded-lg shadow-md"> {/* Card styling */}
+            <p className="text-lg font-medium mb-2">{doctorName}</p>
+            <p className="text-gray-600 mb-4">{doctorDesignation}</p>
+            <p className="text-gray-800">{contentText}</p>
+          </div>
+        </div>
+      </div>
+    </div>
     </section>
   );
 };

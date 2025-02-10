@@ -10,7 +10,8 @@ const Footer = () => {
             <span className="text-purple-500">HearMate</span>
           </p>
           <p className="caption text-n-4 lg:block">
-            © {new Date().getFullYear()}. All rights reserved.
+            Powered by <a href="https://www.thecorise.com">Corise</a> ©{" "}
+            {new Date().getFullYear()}. All rights reserved.
           </p>
         </div>
 

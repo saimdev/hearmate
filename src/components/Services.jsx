@@ -16,8 +16,8 @@ const Services = () => {
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="Generative AI made for creators."
-          text="Brainmaster unlocks the potential of AI-powered applications"
+          title="Smart hearing solutions, designed for you."
+          text="HearMate leverages advanced technology to enhance your hearing."
         />
 
         <div className="relative">
@@ -33,9 +33,9 @@ const Services = () => {
               />
             </div>
             <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h3 className="h4 mb-4">Smartest AI Tutor</h3>
+              <h3 className="h4 mb-4">Personlized Hearing</h3>
               <p className="body-2 mb-[3rem] text-n-3">
-                Learn languages effortlessly with Learn2Language's AI tutor.
+                Experience clear and customized sound with HearMate
               </p>
               <ul className="body-2">
                 {brainmastertServices.map((item, index) => (

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
-import webLogo from "../assets/learning-logo.svg";
+import webLogo from "../assets/hearmate1.svg";
 import { navigation } from "../constants";
 import Button from "./Button";
 import { HamburgerMenu } from "./design/Header";
@@ -63,15 +63,15 @@ const Header = () => {
 
           <HamburgerMenu />
         </nav>
-        <a
+        {/* <a
           href="#sign-up"
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
           New account
-        </a>
-        <Button className="hidden lg:flex" href="#sign-in">
+        </a> */}
+        {/* <Button className="hidden lg:flex" href="#sign-in">
           Sign in
-        </Button>
+        </Button> */}
         <Button
           className="ml-auto lg:hidden"
           px="px-3"

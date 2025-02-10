@@ -95,9 +95,9 @@ export const companyLogos = [
 ];
 
 export const brainmastertServices = [
-  "AI Conversation Practice",
-  "Personalized Language Tutoring",
-  "AI Language Partner",
+  "Noise Reduction",
+  "Hearing Tests",
+  "Affordable Solution",
 ];
 
 export const brainmasterServicesIcons = [
@@ -111,8 +111,8 @@ export const brainmasterServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "AI Conversation Practice",
-    text: "Enable realistic, interactive conversations with the AI, including role-playing and scenario-based learning.",
+    title: "Noise Reduction",
+    text: "Implement advanced noise reduction algorithms to enhance audio clarity in various environments.",
     date: "January 2024",
     status: "done",
     imageUrl: roadmap1,
@@ -120,26 +120,26 @@ export const roadmap = [
   },
   {
     id: "1",
-    title: "Personalized Learning Plans",
-    text: "Develop customized learning paths based on individual user progress and learning goals.",
+    title: "Hearing Test",
+    text: "Integrate a built-in hearing test feature for users to monitor their hearing health.",
     date: "May 2024",
-    status: "progress",
+    status: "done",
     imageUrl: roadmap2,
   },
   {
     id: "2",
-    title: "Pronunciation Feedback",
-    text: "Provide real-time feedback on user pronunciation, helping them improve their speaking skills.",
+    title: "Suppressing User's Own Voice", // More descriptive title
+    text: "Develop technology to minimize the user's own voice feedback for a more natural listening experience.",
     date: "June 2024",
     status: "progress",
     imageUrl: roadmap3,
   },
   {
     id: "3",
-    title: "Multi-Language Support",
-    text: "Expand language offerings to include more languages beyond the initial set.",
+    title: "Store to Buy AirPods", // More descriptive title
+    text: "Create an integrated store within the app to allow users to conveniently purchase compatible AirPods.",
     date: "March 2024",
-    status: "done",
+    status: "progress",
     imageUrl: roadmap4,
   },
 ];
@@ -262,34 +262,34 @@ export const pricing = [
   {
     id: "0",
     title: "Basic",
-    description: "Start learning with limited AI conversations.",
+    description: "Get started with essential hearing enhancement features.",
     price: "0",
     features: [
-      "Limited access",
-      "Basic vocabulary",
-      "Community forum access",
+      "Effective Noise Reduction for everyday environments",
+      "Easy-to-use Volume Control for comfortable listening",
+      "Basic Sound Profiles for personalized audio experiences",
     ],
   },
   {
     id: "1",
     title: "Premium",
-    description: "Unlock unlimited AI conversations and personalized learning.",
-    price: "9.99", // Or adjust as needed
+    description: "Unlock an enhanced hearing experience with advanced features.",
+    price: "9.99",
     features: [
-      "Unlimited AI conversation practice",
-      "Personalized learning plans",
-      "Advanced vocabulary and grammar",
+      "Advanced Noise Cancellation to minimize distracting background sounds",
+      "Personalized Sound Profiles tailored to your specific hearing needs",
+      "Built-in Hearing Tests to monitor your hearing health over time",
     ],
   },
   {
     id: "2",
-    title: "Pro", // Changed from Enterprise to Pro, more fitting for individual learners
-    description: "Master any language with personalized coaching",
-    price: "29.99", // Or adjust as needed
+    title: "Pro",
+    description: "Experience ultimate hearing clarity and control with premium features.",
+    price: "29.99",
     features: [
-      "All Premium features",
-      "One-on-one coaching sessions", // Or specify frequency
-      "Personalized feedback",
+      "All Premium Features, including advanced noise cancellation ",
+      "Premium Sound Profiles for the most refined listening experience",
+      "Remote Audio Adjustments (if applicable)", // Only include if this feature exists
     ],
   },
 ];
@@ -297,16 +297,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Speak Fluently",
-    text: "Practice speaking with our AI chat partner and gain confidence in your conversational skills.",
+    title: "Crystal-Clear Sound",
+    text: "Experience rich, natural sound that enhances your listening experience.",
     backgroundUrl: "./assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Learn Anytime, Anywhere",
-    text: "Access your AI language tutor on any device, whenever you have time to learn.",
+    title: "Personalized Hearing",
+    text: "Tailor your listening profile to your specific needs and preferences.",
     backgroundUrl: "./assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage3,
@@ -314,16 +314,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Personalized Learning",
-    text: "Our AI adapts to your learning style and pace, providing customized lessons and feedback.",
+    title: "Noise Reduction",
+    text: "Minimize background noise and focus on the sounds you want to hear.",
     backgroundUrl: "./assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage4,
   },
   {
     id: "3",
-    title: "Instant Feedback",
-    text: "Receive immediate feedback on your pronunciation and grammar, helping you improve quickly.",
+    title: "Volume Control",
+    text: "Easily adjust volume levels for comfortable listening in any environment.",
     backgroundUrl: "./assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage5,
@@ -331,16 +331,16 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Engaging Conversations",
-    text: "Enjoy realistic and interactive conversations with our AI, making language learning fun and engaging.",
+    title: "Hearing Tests",
+    text: "Monitor your hearing health with built-in hearing test functionality.",
     backgroundUrl: "./assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage6,
   },
   {
     id: "5",
-    title: "Expand Your Vocabulary",
-    text: "Learn new words and phrases in context, enriching your vocabulary and language proficiency.",
+    title: "Affordable Alternative",
+    text: "Enjoy high-quality hearing enhancement without the high cost of traditional hearing aids.",
     backgroundUrl: "./assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage7,

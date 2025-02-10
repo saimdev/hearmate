@@ -31,9 +31,9 @@ const Pricing = () => {
           </div>
         </div>
         <Heading
-          title="Pay once, use forever"
-          tag="Get started with Brain"
-          tagAccent="master"
+          title="Unlock Clear Sound with a HearMate Subscription"
+          tag="Get started with "
+          tagAccent="HearMate"
         />
         <div className="relative">
           <PricingList />

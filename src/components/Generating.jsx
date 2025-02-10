@@ -7,7 +7,7 @@ const Generating = ({ className }) => {
       ${className || ""}`}
     >
       <img className="animate-spin w-5 h-5 mr-4" src={loading} alt="Loading" />
-      AI Bot calling you
+      Connecting to HearMate....
     </div>
   );
 };

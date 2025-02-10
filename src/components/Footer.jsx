@@ -7,9 +7,7 @@ const Footer = () => {
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
         <div className="flex flex-col gap-5 text-center sm:gap-2 sm:text-left">
           <p className="caption">
-            <span style={{ color: "#5DCA76" }}>Learn</span>
-            <span className="text-purple-500">2</span>
-            <span style={{ color: "#F6C84B" }}>Language</span>{" "}
+            <span className="text-purple-500">HearMate</span>
           </p>
           <p className="caption text-n-4 lg:block">
             © {new Date().getFullYear()}. All rights reserved.

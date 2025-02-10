@@ -23,11 +23,10 @@ const Hero = () => {
       <div className="container realtive" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
-            Master any Language&nbsp;Effortlessly with {` `}
+            Hear the World Clearly with {` `}
             <span className="inline-block relative">
-              <span style={{ color: "#5DCA76" }}>Learn</span>
-              <span className="text-purple-500">2</span>
-              <span style={{ color: "#F6C84B" }}>Language</span>{" "}
+              <span style={{ color: "#5DCA76" }}>Hear</span>
+              <span className="text-purple-500">Mate</span>
               <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2"
@@ -38,12 +37,14 @@ const Hero = () => {
             </span>
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            Unleash your language potential with Learn2Language. Chat your way
-            to fluency with Learn2Language, the AI-powered language learning
-            app.
+            Experience the joy of clear sound with HearMate. Replace expensive
+            hearing aids with HearMate, the app that transforms your AirPods
+            into a personalized listening device. Enjoy noise reduction, volume
+            balance, hearing tests, and even shop for AirPods and hands-free
+            devices, all within the app.
           </p>
           <Button href="#" white>
-            Get Started
+            Download Now
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
@@ -72,7 +73,7 @@ const Hero = () => {
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                    title="French Bot Call"
+                    title="HearMate Users"
                   />
                 </ScrollParallax>
               </div>

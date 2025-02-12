@@ -77,7 +77,6 @@ const Services = () => {
             </div> */}
 
           {/* Service 3 */}
-          /
         </div>
         <Gradient />
       </div>

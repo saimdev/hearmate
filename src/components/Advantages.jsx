@@ -5,7 +5,7 @@ import { Gradient } from "./design/Services";
 
 const Advantages = () => {
     return (
-        <Section id="advantages">
+        <Section id="benefits">
             <div className="container">
                 <Heading
                     title="Discover the Benefits of "
@@ -26,7 +26,7 @@ const Advantages = () => {
                                 width={80}
                                 height={80}
                             /> */}
-                            <advantage.icon size={56}  className="m-3"/>
+                            <advantage.icon size={56} className="m-3" />
                             <h3 className="h5 mb-3">{advantage.title}</h3>
                             <p className="body-2 text-n-3">{advantage.description}</p>
                         </div>

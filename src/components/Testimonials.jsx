@@ -5,6 +5,8 @@ import Heading from "./Heading";
 import Section from "./Section";
 import { GradientLight } from "./design/Benefits";
 
+import reviewVideo from "../assets/review.mp4"
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 // import "swiper/css/pagination";
@@ -85,6 +87,29 @@ const Testimonials = () => {
                     ))}
                 </Swiper>
                 {/* </div> */}
+
+                <div className="mt-32">
+                    <div>
+                        <Heading
+                            className="md:max-w-md lg:max-w-2xl"
+                            title="Video "
+                            accent="Review"
+                        />
+                    </div>
+                    <div className="relative p-3 bg-conic-gradient rounded-lg shadow-md">
+                        <div className="border border-gray-300 rounded-lg overflow-hidden shadow-lg">
+                            <video
+                                className="w-full aspect-video object-cover rounded-lg"
+                                src={reviewVideo}
+                                controls
+                                autoPlay
+                                loop
+                                muted
+                            ></video>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
         </Section>

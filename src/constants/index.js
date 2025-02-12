@@ -59,6 +59,16 @@ export const navigation = [
     url: "#how-to-use",
   },
   {
+    id: "6",
+    title: "Benefits",
+    url: "#benefits",
+  },
+  {
+    id: "6",
+    title: "Why Choose Us",
+    url: "#why-choose-us",
+  },
+  {
     id: "2",
     title: "Pricing",
     url: "#pricing",
@@ -164,7 +174,7 @@ export const collabText =
 export const collabContent = [
   {
     id: "0",
-    title: "Need any smartphone Apple or Andriod",
+    title: "Need any smartphone Apple or Android",
   },
   {
     id: "1",

@@ -11,7 +11,7 @@ const Collaboration = () => {
   return (
     <Section crosses>
       <Heading
-        className="md:max-w-md lg:max-w-2xl"
+        className="container md:max-w-md lg:max-w-2xl"
         title="Hearing Aids VS "
         accent="HearMate"
       />
@@ -33,7 +33,7 @@ const Collaboration = () => {
               </li>
             ))}
           </ul>
-          <Button>Try it now</Button>
+          <Button className="z-[9]">Try it now</Button>
         </div>
 
         <div className="mt-4 lg:ml-auto xl:w-[38rem]">

@@ -9,7 +9,7 @@ import Heading from "./Heading";
 
 const Collaboration = () => {
   return (
-    <Section crosses>
+    <Section id="hearing-solutions">
       <Heading
         className="container md:max-w-md lg:max-w-2xl"
         title="Hearing Aids VS "

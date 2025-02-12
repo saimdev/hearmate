@@ -96,8 +96,9 @@ const Testimonials = () => {
                             accent="Review"
                         />
                     </div>
+                    {/* <Swiper> */}
                     <div className="relative p-3 bg-conic-gradient rounded-lg shadow-md">
-                        <div className="border border-gray-300 rounded-lg overflow-hidden shadow-lg">
+                        <div className="border  rounded-2xl overflow-hidden">
                             <video
                                 className="w-full aspect-video object-cover rounded-lg"
                                 src={reviewVideo}
@@ -109,6 +110,7 @@ const Testimonials = () => {
                         </div>
                     </div>
 
+                    {/* </Swiper> */}
                 </div>
             </div>
 

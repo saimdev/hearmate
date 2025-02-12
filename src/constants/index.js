@@ -25,9 +25,7 @@ import {
   framer,
   homeSmile,
   instagram,
-  notification2,
-  notification3,
-  notification4,
+
   notion,
   photoshop,
   plusSquare,
@@ -44,6 +42,9 @@ import {
   sliders04,
   telegram,
   twitter,
+  notification2,
+  notification3,
+  notification4,
 } from "../assets";
 
 export const navigation = [
@@ -93,6 +94,19 @@ export const companyLogos = [
   companyLogo1,
   companyLogo7,
 ];
+
+import {
+  Ear,
+  Volume2,
+  Sliders,
+  DollarSign,
+  HeartPulse,
+  Brain,
+  Smartphone,
+  ChartArea,
+  AudioLines,
+  Activity,
+} from "lucide-react";
 
 export const brainmastertServices = [
   "Noise Reduction",
@@ -145,23 +159,25 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "HearMate is designed to provide a seamless hearing experience with smart technology, personalized features, and unmatched comfort.";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
-    text: collabText,
+    title: "Need any smartphone Apple or Andriod",
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Need any Earbuds wired or wireless",
+
   },
   {
     id: "2",
-    title: "Top-notch Security",
-  },
+    title: "HearMate Subscription Monthly or Annual",
+
+  }
 ];
+
 
 export const collabApps = [
   {
@@ -300,50 +316,56 @@ export const benefits = [
     title: "Crystal-Clear Sound",
     text: "Experience rich, natural sound that enhances your listening experience.",
     backgroundUrl: "./assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
+    icon: AudioLines,
     imageUrl: benefitImage2,
+    bg_color: "red",
   },
   {
     id: "1",
     title: "Personalized Hearing",
     text: "Tailor your listening profile to your specific needs and preferences.",
     backgroundUrl: "./assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
+    icon: Ear,
     imageUrl: benefitImage3,
     light: true,
+    bg_color: "red",
   },
   {
     id: "2",
     title: "Noise Reduction",
     text: "Minimize background noise and focus on the sounds you want to hear.",
     backgroundUrl: "./assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
+    icon: Volume2,
     imageUrl: benefitImage4,
+    bg_color: "red",
   },
   {
     id: "3",
     title: "Volume Control",
     text: "Easily adjust volume levels for comfortable listening in any environment.",
     backgroundUrl: "./assets/benefits/card-4.svg",
-    iconUrl: benefitIcon4,
+    icon: Sliders,
     imageUrl: benefitImage5,
     light: true,
+    bg_color: "red",
   },
   {
     id: "4",
     title: "Hearing Tests",
     text: "Monitor your hearing health with built-in hearing test functionality.",
     backgroundUrl: "./assets/benefits/card-5.svg",
-    iconUrl: benefitIcon1,
+    icon: Activity,
     imageUrl: benefitImage6,
+    bg_color: "red",
   },
   {
     id: "5",
     title: "Affordable Alternative",
     text: "Enjoy high-quality hearing enhancement without the high cost of traditional hearing aids.",
     backgroundUrl: "./assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
+    icon: DollarSign,
     imageUrl: benefitImage7,
+    bg_color: "red",
     light: true,
   },
 ];
@@ -380,3 +402,141 @@ export const socials = [
     url: "#",
   },
 ];
+
+
+// Advantages
+
+
+
+export const advantagesData = [
+  {
+    id: 1,
+    title: "Personalized Hearing",
+    description: "Experience customized sound that adapts to your hearing needs.",
+    image: "path-to-your-image/advantage1.png",
+    icon: Ear,
+  },
+  {
+    id: 2,
+    title: "Noise Reduction",
+    description: "Block out unwanted noise and focus on the sounds that matter.",
+    image: "path-to-your-image/advantage2.png",
+    icon: Volume2,
+  },
+  {
+    id: 3,
+    title: "Smart Volume Control",
+    description: "Automatically adjusts sound levels based on your environment.",
+    image: "path-to-your-image/advantage3.png",
+    icon: Sliders,
+  },
+  {
+    id: 4,
+    title: "Affordable & Effective",
+    description: "Get premium hearing enhancement without expensive hearing aids.",
+    image: "path-to-your-image/advantage4.png",
+    icon: DollarSign,
+  },
+  {
+    id: 5,
+    title: "Hearing Health Monitoring",
+    description: "Built-in hearing tests to track and improve your hearing.",
+    image: "path-to-your-image/advantage5.png",
+    icon: HeartPulse,
+  },
+  {
+    id: 6,
+    title: "Report Generation with Graphs",
+    description: "Get detailed reports and visual graphs to monitor your hearing progress.",
+    image: "path-to-your-image/advantage6.png",
+    icon: ChartArea,
+  },
+  {
+    id: 8,
+    title: "AI-Powered Sound Optimization",
+    description: "Uses artificial intelligence to fine-tune sound for different environments.",
+    image: "path-to-your-image/advantage8.png",
+    icon: Brain,
+  },
+  {
+    id: 11,
+    title: "Easy App Control",
+    description: "Control your hearing experience with a user-friendly mobile app.",
+    image: "path-to-your-image/advantage11.png",
+    icon: Smartphone,
+  },
+];
+
+
+
+// Testimonial
+
+export const testimonials = [
+  {
+    id: "0",
+    name: "John Doe",
+    review: "The sound quality is absolutely amazing! It feels so natural and immersive.",
+    rating: 5,
+    displayPicture: notification4,
+    iconUrl: benefitIcon1,
+    backgroundUrl: "./assets/benefits/card-1.svg",
+    imageUrl: benefitImage7,
+    light: true,
+  },
+  {
+    id: "1",
+    name: "Sarah Smith",
+    review: "I love how I can personalize my listening experience. It's a game-changer!",
+    rating: 4.5,
+    displayPicture: notification2,
+    iconUrl: benefitIcon2,
+    backgroundUrl: "./assets/benefits/card-2.svg",
+    imageUrl: benefitImage7,
+    light: true,
+  },
+  {
+    id: "2",
+    name: "Michael Johnson",
+    review: "The noise reduction feature helps me focus better. Definitely worth it!",
+    rating: 5,
+    displayPicture: notification3,
+    iconUrl: benefitIcon4,
+    backgroundUrl: "./assets/benefits/card-3.svg",
+    imageUrl: benefitImage7,
+    light: true,
+  },
+  {
+    id: "3",
+    name: "Emily Davis",
+    review: "Adjusting volume levels has never been easier. Super convenient and effective!",
+    rating: 4,
+    displayPicture: notification4,
+    iconUrl: benefitIcon3,
+    backgroundUrl: "./assets/benefits/card-4.svg",
+    imageUrl: benefitImage7,
+    light: true,
+  },
+  {
+    id: "4",
+    name: "James Wilson",
+    review: "I can now monitor my hearing health effortlessly. Highly recommend!",
+    rating: 4.5,
+    displayPicture: notification2,
+    iconUrl: benefitIcon4,
+    backgroundUrl: "./assets/benefits/card-5.svg",
+    imageUrl: benefitImage7,
+    light: true,
+  },
+  {
+    id: "5",
+    name: "Sophia Martinez",
+    review: "Affordable and high-quality! I no longer need expensive hearing aids.",
+    rating: 5,
+    displayPicture: notification2,
+    iconUrl: benefitIcon1,
+    backgroundUrl: "./assets/benefits/card-6.svg",
+    imageUrl: benefitImage7,
+    light: true,
+  },
+];
+

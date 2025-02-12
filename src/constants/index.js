@@ -55,7 +55,7 @@ export const navigation = [
   },
   {
     id: "1",
-    title: "Hearing Solutions",
+    title: "Solution",
     url: "#hearing-solutions",
   },
   {
@@ -70,7 +70,7 @@ export const navigation = [
   },
   {
     id: "6",
-    title: "Why Choose Us",
+    title: "About Us",
     url: "#why-choose-us",
   },
   {

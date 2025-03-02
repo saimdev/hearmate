@@ -79,6 +79,10 @@ import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
+import tiktok from "./socials/tiktok.svg"
+import reddit from "./socials/reddit.svg"
+import youtube from "./socials/youtube.svg"
+import medium from "./socials/medium.svg"
 
 import companyLogo1 from "./companylogos/yourlogo-1.png";
 import companyLogo2 from "./companylogos/yourlogo-2.png";
@@ -162,6 +166,10 @@ export {
   instagram,
   telegram,
   twitter,
+  tiktok,
+  reddit,
+  youtube,
+  medium,
   companyLogo1,
   companyLogo2,
   companyLogo3,

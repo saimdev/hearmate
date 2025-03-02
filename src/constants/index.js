@@ -25,6 +25,8 @@ import {
   framer,
   homeSmile,
   instagram,
+  reddit,
+  tiktok,
 
   notion,
   photoshop,
@@ -45,6 +47,8 @@ import {
   notification2,
   notification3,
   notification4,
+  youtube,
+  medium,
 } from "../assets";
 
 export const navigation = [
@@ -388,33 +392,45 @@ export const benefits = [
 export const socials = [
   {
     id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
+    title: "Reddit",
+    iconUrl: reddit,
+    url: "https://www.reddit.com/user/CategoryOk8266/",
   },
   {
     id: "1",
+    title: "Tiktok",
+    iconUrl: tiktok,
+    url: "https://www.tiktok.com/@hearmateapp",
+  },
+  {
+    id: "5",
     title: "Twitter",
     iconUrl: twitter,
-    url: "#",
+    url: "https://www.x.com/@hearmateapp",
   },
   {
     id: "2",
     title: "Instagram",
     iconUrl: instagram,
-    url: "#",
+    url: "https://www.instagram.com/hearmate.app/",
   },
   {
     id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
+    title: "Youtube",
+    iconUrl: youtube,
+    url: "https://www.youtube.com/@Hearmate.app123",
   },
   {
     id: "4",
     title: "Facebook",
     iconUrl: facebook,
-    url: "#",
+    url: "https://www.facebook.com/profile.php?id=61573641779594",
+  },
+  {
+    id: "6",
+    title: "Medium",
+    iconUrl: medium,
+    url: "https://medium.com/",
   },
 ];
 

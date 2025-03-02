@@ -9,6 +9,11 @@ const Footer = () => {
           <p className="caption">
             <span className="text-purple-500">HearMate</span>
           </p>
+          <p className="caption">
+            <a href="mailto:hearmate.app@gmail.com" className="text-[#5DCA76]">
+              hearmate.app@gmail.com
+            </a>
+          </p>
           <p className="caption text-n-4 lg:block">
             Powered by <a href="https://www.thecorise.com">Corise</a> ©{" "}
             {new Date().getFullYear()}. All rights reserved.

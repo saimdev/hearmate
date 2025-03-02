@@ -4,11 +4,11 @@ import Button from "./Button";
 
 const PricingList = () => {
   return (
-    <div className="flex gap-[1rem] max-lg:flex-wrap">
+    <div className="flex justify-between gap-[1rem] max-lg:flex-wrap">
       {pricing.map((item) => (
         <div
           key={item.id}
-          className="w-[19rem] max-lg:w-full h-full px-6 bg-n-8 border border-n-6 rounded-[2rem] lg:w-auto even:py-14 odd:py-8 odd:my-4 even:border-3 even:border-purple-500 [&>h3]:first:text-color-2 [&>h3]:even:text-color-1 [&>h3]:last:text-color-4"
+          className="w-[50rem] max-lg:w-full h-full px-6 bg-n-8 border border-n-6 rounded-[2rem] lg:w-auto even:py-14 odd:py-8 odd:my-4 even:border-3 even:border-purple-500 [&>h3]:first:text-color-2 [&>h3]:even:text-color-1 [&>h3]:last:text-color-4"
         >
           <h3 className="h4 mb-4">{item.title}</h3>
           <p className="body-2 min-h-[4rem] mb-3 text-n-1/50">
@@ -37,7 +37,7 @@ const PricingList = () => {
           </Button>
 
           <ul>
-            {item.features.map((feature, index) => (
+            {item?.features?.map((feature, index) => (
               <li
                 key={index}
                 className="flex items-start py-5 border-t border-n-6"

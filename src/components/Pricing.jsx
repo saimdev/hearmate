@@ -31,7 +31,7 @@ const Pricing = () => {
           </div>
         </div>
         <Heading
-          title="Unlock Clear Sound with a HearMate Subscription"
+          title="Experience Pristine Audio with a HearMate Subscription."
           tag="Get started with "
           tagAccent="HearMate"
         />

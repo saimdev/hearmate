@@ -16,8 +16,8 @@ const Services = () => {
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="Smart hearing solutions, designed for you."
-          text="HearMate leverages advanced technology to enhance your hearing."
+          title="Intelligent auditory solutions tailored specifically for your needs."
+          text="HearMate utilizes cutting-edge technology to improve your auditory experience. Personalized Hearing Aid"
         />
 
         <div className="relative">
@@ -33,9 +33,9 @@ const Services = () => {
               />
             </div>
             <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h3 className="h4 mb-4">Personlized Hearing</h3>
+              <h3 className="h4 mb-4">Personlized Hearing Aid</h3>
               <p className="body-2 mb-[3rem] text-n-3">
-                Experience clear and customized sound with HearMate
+                Discover personalized and distinct audio quality with HearMate
               </p>
               <ul className="body-2">
                 {brainmastertServices.map((item, index) => (
@@ -49,9 +49,9 @@ const Services = () => {
                 ))}
               </ul>
             </div>
-            <ScrollParallax isAbsolutelyPositioned>
+            {/* <ScrollParallax isAbsolutelyPositioned>
               <Generating className="absolute left-4 right-4 bottom-6 border-n-1/10 border lg:left-1/2 lg-right-auto lg:bottom-24 lg:-translate-x-1/2" />
-            </ScrollParallax>
+            </ScrollParallax> */}
           </div>
 
           {/* Service 2 */}

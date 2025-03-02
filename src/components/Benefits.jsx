@@ -11,7 +11,8 @@ const Benefits = () => {
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="Hear the World, Your Way with "
+          title="Experience the benefits of a Smart Hearing Aid
+equipped with exceptional features by choosing "
           accent="HearMate"
         />
         <div className="flex flex-wrap gap-10 mb-10">
@@ -36,10 +37,10 @@ const Benefits = () => {
                   <span className={`bg-purple-600 p-4 rounded-2xl`}>
                     <item.icon size={28} />
                   </span>
-                  <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
+                  {/* <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
                     Explore more
                   </p>
-                  <Arrow />
+                  <Arrow /> */}
                 </div>
               </div>
               {item.light && <GradientLight />}

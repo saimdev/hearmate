@@ -124,9 +124,9 @@ import {
 } from "lucide-react";
 
 export const brainmastertServices = [
-  "Noise Reduction",
-  "Hearing Tests",
-  "Affordable Solution",
+  "Efficient Hearing Tests",
+  "Smart Voice Amplification",
+  "Active Noise Reduction",
 ];
 
 export const brainmasterServicesIcons = [
@@ -179,16 +179,16 @@ export const collabText =
 export const collabContent = [
   {
     id: "0",
-    title: "Need any smartphone Apple or Android",
+    title: "Compatible with all smartphones, either Android or Apple.",
   },
   {
     id: "1",
-    title: "Need any Earbuds wired or wireless",
+    title: "Supports all types of earphones, whether Bluetooth or wired.",
 
   },
   {
     id: "2",
-    title: "HearMate Subscription Monthly or Annual",
+    title: "Offers flexible subscription plans, choose to pay monthly or annually",
 
   }
 ];
@@ -292,36 +292,36 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "Get started with essential hearing enhancement features.",
-    price: "0",
-    features: [
-      "Effective Noise Reduction for everyday environments",
-      "Easy-to-use Volume Control for comfortable listening",
-      "Basic Sound Profiles for personalized audio experiences",
-    ],
+    title: "Pay Annually",
+    description: "Unbeatable Price",
+    price: "29.99",
+    // features: [
+    //   "Effective Noise Reduction for everyday environments",
+    //   "Easy-to-use Volume Control for comfortable listening",
+    //   "Basic Sound Profiles for personalized audio experiences",
+    // ],
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Unlock an enhanced hearing experience with advanced features.",
-    price: "9.99",
-    features: [
-      "Advanced Noise Cancellation to minimize distracting background sounds",
-      "Personalized Sound Profiles tailored to your specific hearing needs",
-      "Built-in Hearing Tests to monitor your hearing health over time",
-    ],
+    title: "Pay Annually",
+    description: "Best Value",
+    price: "29.99",
+    // features: [
+    //   "Advanced Noise Cancellation to minimize distracting background sounds",
+    //   "Personalized Sound Profiles tailored to your specific hearing needs",
+    //   "Built-in Hearing Tests to monitor your hearing health over time",
+    // ],
   },
   {
     id: "2",
-    title: "Pro",
-    description: "Experience ultimate hearing clarity and control with premium features.",
-    price: "29.99",
-    features: [
-      "All Premium Features, including advanced noise cancellation ",
-      "Premium Sound Profiles for the most refined listening experience",
-      "Remote Audio Adjustments (if applicable)", // Only include if this feature exists
-    ],
+    title: "Life Time",
+    description: "Greatest Deal",
+    price: "149.99",
+    // features: [
+    //   "All Premium Features, including advanced noise cancellation ",
+    //   "Premium Sound Profiles for the most refined listening experience",
+    //   "Remote Audio Adjustments (if applicable)", // Only include if this feature exists
+    // ],
   },
 ];
 
@@ -367,7 +367,7 @@ export const benefits = [
   {
     id: "4",
     title: "Hearing Tests",
-    text: "Monitor your hearing health with built-in hearing test functionality.",
+    text: "Monitor your health with built-in free and reliable hearing test functionality",
     backgroundUrl: "./assets/benefits/card-5.svg",
     icon: Activity,
     imageUrl: benefitImage6,
@@ -433,7 +433,7 @@ export const advantagesData = [
   },
   {
     id: 2,
-    title: "Noise Reduction",
+    title: "Active Noise Cancellation",
     description: "Block out unwanted noise and focus on the sounds that matter.",
     image: "path-to-your-image/advantage2.png",
     icon: Volume2,
@@ -455,7 +455,7 @@ export const advantagesData = [
   {
     id: 5,
     title: "Hearing Health Monitoring",
-    description: "Built-in hearing tests to track and improve your hearing.",
+    description: "Built-in free and reliable hearing tests to track and improve your hearing.",
     image: "path-to-your-image/advantage5.png",
     icon: HeartPulse,
   },
@@ -475,7 +475,7 @@ export const advantagesData = [
   },
   {
     id: 11,
-    title: "Easy App Control",
+    title: "Simple & Easy App Control",
     description: "Control your hearing experience with a user-friendly mobile app.",
     image: "path-to-your-image/advantage11.png",
     icon: Smartphone,

@@ -12,27 +12,33 @@ const ChooseUs = () => {
     const accordionData = [
         {
             id: 1,
-            title: "Patented Noise Suppression",
+            title: "Our Tremendous Team",
             content:
-                "We have a serious team of engineers. We have 50+ issued patents. Now add speech recognition and machine learning for a creative, new experience ",
+                "Our team comprises exceptionally skilled and committed engineers and developers, collectively holding numerous patents.",
         },
         {
             id: 2,
-            title: "Beautiful Environments and Features",
+            title: "Voice and Video Specialists",
             content:
-                "We have already pre-made some environments for you to try in any listening situation and we provided unique AmiHear features that make sound even more clear ",
+                "Our team has created a diverse range of complex voice and video applications and products, addressing both business solutions and smaller, recreational uses.",
         },
         {
             id: 3,
-            title: "5+ Years of Voice Processing Experience",
+            title: "Predefined Customer Profiles",
             content:
-                "Multiple Phd’s working on this app",
+                "We have developed several environments for you to experiment with in various listening scenarios, offering you a distinctive and straightforward configuration to enhance sound clarity.",
         },
         {
             id: 4,
-            title: "Fast Support",
+            title: "Our Future Goals",
             content:
-                "We respond within 24 hours. Period.",
+                "We are currently integrating speech recognition and machine learning technologies to further improve the effectiveness of HearMate.",
+        },
+        {
+            id: 5,
+            title: "We Value Your Input",
+            content:
+                "Whether you have a complaint, a new suggestion, or a note of appreciation, we encourage you to reach out to us, and we will certainly get back to you.",
         },
     ];
 
@@ -42,7 +48,7 @@ const ChooseUs = () => {
                 <Heading
                     className="md:max-w-md lg:max-w-2xl text-center"
                     title="Why Choose "
-                    accent="Us?"
+                    accent="HearMate?"
                 />
                 <div id="accordion-flush">
                     {accordionData.map((item) => (

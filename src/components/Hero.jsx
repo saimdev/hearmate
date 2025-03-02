@@ -23,8 +23,7 @@ const Hero = () => {
       <div className="container realtive" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
-            Hear the World Clearly with {` `}
-            <span className="inline-block relative">
+            Introducing <span className="inline-block relative">
               <span style={{ color: "#5DCA76" }}>Hear</span>
               <span className="text-purple-500">Mate</span>
               <img
@@ -34,14 +33,16 @@ const Hero = () => {
                 height={28}
                 alt="Curve"
               />
-            </span>
+            </span>{" "}
+            An Innovative and Cost-Effective Hearing Aid
+            Designed for Crystal Clear Sound Quality
+
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            Experience the joy of clear sound with HearMate. Replace expensive
-            hearing aids with HearMate, the app that transforms your AirPods
-            into a personalized listening device. Enjoy noise reduction, volume
-            balance, hearing tests, and even shop for AirPods and hands-free
-            devices, all within the app.
+            HearMate provides a cost-effective and convenient over-the-counter solution to high-priced hearing
+            aids by converting your earphones and headphones into customized hearing aids. Experience features
+            such as noise reduction, volume adjustment, hearing assessments, and the ability to purchase
+            earphones and hands-free devices, all accessible through the HearMate application.
           </p>
           <Button href="#" white>
             Download Now
@@ -59,9 +60,9 @@ const Hero = () => {
                   height={490}
                   alt="AI robot image"
                 />
-                <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
+                {/* <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" /> */}
 
-                <ScrollParallax isAbsolutelyPositioned>
+                {/* <ScrollParallax isAbsolutelyPositioned>
                   <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
                     {heroIcons.map((icon, index) => (
                       <li className="p-5" key={index}>
@@ -69,7 +70,7 @@ const Hero = () => {
                       </li>
                     ))}
                   </ul>
-                </ScrollParallax>
+                </ScrollParallax> */}
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"

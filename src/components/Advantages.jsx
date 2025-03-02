@@ -8,9 +8,9 @@ const Advantages = () => {
         <Section id="benefits">
             <div className="container">
                 <Heading
-                    title="Discover the Benefits of "
+                    title="Experience the Advantages of "
                     accent="HearMate"
-                    text="HearMate offers cutting-edge technology to enhance your hearing experience."
+                    text="HearMate combines commonly available devices with a touch of ingenuity to offer a distinctly personalized experience for its users."
                 />
                 {/* Responsive Grid Layout */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

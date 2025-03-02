@@ -12,13 +12,15 @@ const Collaboration = () => {
     <Section id="hearing-solutions">
       <Heading
         className="container md:max-w-md lg:max-w-2xl"
-        title="Hearing Aids VS "
+        title=" HearMate vs "
         accent="HearMate"
       />
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
           <h4 className="h2 mb-4 md:mb-8">
-            HearMate for seamless collaboration
+            HearMate
+            is the new
+            Hearing Aid
           </h4>
           <ul className="max-w-[22rem] mb-10 md:mb-14">
             {collabContent.map((item) => (

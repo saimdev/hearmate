@@ -22,7 +22,7 @@ import loading from "./loading.png";
 import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
-import robot from "./hero/robot.jpg";
+import robot from "./hero/hero.jpg";
 import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
@@ -36,7 +36,7 @@ import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
 
-import service1 from "./services/service-1.png";
+import service1 from "./services/intel-bot.jpg";
 import service2 from "./services/service-2.png";
 import service3 from "./services/service-3.png";
 
@@ -67,12 +67,12 @@ import benefitIcon1 from "./benefits/icon-1.svg";
 import benefitIcon2 from "./benefits/icon-2.svg";
 import benefitIcon3 from "./benefits/icon-3.svg";
 import benefitIcon4 from "./benefits/icon-4.svg";
-import benefitImage2 from "./benefits/image-2.png";
-import benefitImage3 from "./benefits/image-3.png";
-import benefitImage4 from "./benefits/image-4.png";
-import benefitImage5 from "./benefits/image-5.png";
-import benefitImage6 from "./benefits/image-6.png";
-import benefitImage7 from "./benefits/image-7.png";
+import benefitImage2 from "./benefits/ben-1.jpg";
+import benefitImage3 from "./benefits/ben-2.jpg";
+import benefitImage4 from "./benefits/ben-3.jpg";
+import benefitImage5 from "./benefits/ben-4.jpg";
+import benefitImage6 from "./benefits/ben-5.jpg";
+import benefitImage7 from "./benefits/ben-6.jpg";
 
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";

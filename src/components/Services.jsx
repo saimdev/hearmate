@@ -1,7 +1,7 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { check, service1, service2, service3 } from "../assets";
-import { brainmasterServicesIcons, brainmastertServices } from "../constants";
+import { check, service1, } from "../assets";
+import {  brainmastertServices } from "../constants";
 import Generating from "./Generating";
 import { ScrollParallax } from "react-just-parallax";
 import {

@@ -44,7 +44,7 @@ const Roadmap = () => {
                           height={28}
                           alt={status}
                         />
-                        <div className="tagline text-2xl">{status}</div>
+                        <div className="tagline md:text-2xl">{status}</div>
                       </div>
                     </div>
                     <div className="mb-10 -my-10 -mx-15">

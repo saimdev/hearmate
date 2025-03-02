@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Section from "./Section";
 import Heading from "./Heading";
 
+import { ChevronDown, ChevronUp } from "lucide-react"
+
 const ChooseUs = () => {
     const [openAccordion, setOpenAccordion] = useState(null);
 
@@ -57,30 +59,19 @@ const ChooseUs = () => {
                             <h2>
                                 <button
                                     type="button"
-                                    className="flex md:items-center justify-between w-full py-5 font-medium text-n-1 border-b border-gray-200 dark:border-gray-700 h5 mb-3 gap-3"
+                                    className="flex md:items-center justify-between w-full py-5 font-medium text-n-1 border-b border-gray-200 dark:border-gray-700 text-xl md:h5 mb-3 gap-3"
                                     onClick={() => toggleAccordion(item.id)}
                                     aria-expanded={openAccordion === item.id}
                                     aria-controls={`accordion-body-${item.id}`}
                                 >
                                     <span>{item.title}</span>
-                                    <svg
-                                        className={`w-4 h-4 transform transition-transform duration-300 ${openAccordion === item.id ? "rotate-180" : ""
-                                            }`}
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 10 6"
-                                    >
-                                        <path
-                                            stroke="currentColor"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                            d="M9 5 5 1 1 5"
-                                        />
-                                    </svg>
+                                    {openAccordion === item.id ? (
+                                        <ChevronUp size={32} className="transition-transform duration-300" />
+                                    ) : (
+                                        <ChevronDown size={32} className="transition-transform duration-300" />
+                                    )}
                                 </button>
                             </h2>
-
                             {/* Accordion Content */}
                             <div
                                 id={`accordion-body-${item.id}`}

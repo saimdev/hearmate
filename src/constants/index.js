@@ -296,9 +296,9 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Pay Annually",
+    title: "Pay Monthly",
     description: "Unbeatable Price",
-    price: "29.99",
+    price: "2.99",
     // features: [
     //   "Effective Noise Reduction for everyday environments",
     //   "Easy-to-use Volume Control for comfortable listening",

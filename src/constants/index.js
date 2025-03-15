@@ -49,6 +49,15 @@ import {
   notification4,
   youtube,
   medium,
+  review1,
+  review2,
+  review3,
+  review4,
+  review5,
+  review6,
+  review7,
+  review8,
+  review9,
 } from "../assets";
 
 export const navigation = [
@@ -192,7 +201,7 @@ export const collabContent = [
   },
   {
     id: "2",
-    title: "Offers flexible subscription plans, choose to pay monthly or annually",
+    title: "Offers flexible subscription plans, choose to pay monthly or annually.",
 
   }
 ];
@@ -318,7 +327,7 @@ export const pricing = [
   },
   {
     id: "2",
-    title: "Life Time",
+    title: "Lifetime",
     description: "Greatest Deal",
     price: "149.99",
     // features: [
@@ -505,10 +514,10 @@ export const advantagesData = [
 export const testimonials = [
   {
     id: "0",
-    name: "John Doe",
-    review: "The sound quality is absolutely amazing! It feels so natural and immersive.",
-    rating: 5,
-    displayPicture: notification4,
+    name: "Sarah Smith, London, UK",
+    review: "I've been using HearMate for six months now, and it has made a world of difference. The sound quality is exceptional, and I love how they automatically adjust to different environments. Whether I'm at a restaurant, on a phone call, or watching TV, the experience is seamless. I can't recommend these enough to anyone with hearing loss! ",
+    rating: 4.8,
+    displayPicture: review1,
     iconUrl: benefitIcon1,
     backgroundUrl: "./assets/benefits/card-1.svg",
     imageUrl: benefitImage7,
@@ -516,10 +525,10 @@ export const testimonials = [
   },
   {
     id: "1",
-    name: "Sarah Smith",
-    review: "I love how I can personalize my listening experience. It's a game-changer!",
+    name: "Mary Taggart, Wichita, KS, USA",
+    review: "These hearing aids are a lifesaver! HearMate is incredibly advanced, with features like directional microphones and feedback cancellation. I can hear my grandchildren clearly, even when they're whispering. The setup was straightforward, and the user-friendly app makes adjustments a breeze. Truly a top-notch product!",
     rating: 4.5,
-    displayPicture: notification2,
+    displayPicture: review2,
     iconUrl: benefitIcon2,
     backgroundUrl: "./assets/benefits/card-2.svg",
     imageUrl: benefitImage7,
@@ -527,10 +536,10 @@ export const testimonials = [
   },
   {
     id: "2",
-    name: "Michael Johnson",
-    review: "The noise reduction feature helps me focus better. Definitely worth it!",
-    rating: 5,
-    displayPicture: notification3,
+    name: "David King, Dallas, TX, USA",
+    review: "For several years, I experienced hearing difficulties but hesitated to use hearing aids, as I found them to be quite unnatural. However, the experience of using HearMate was entirely intuitive. I just downloaded the application and started hearing better.",
+    rating: 4.3,
+    displayPicture: review3,
     iconUrl: benefitIcon4,
     backgroundUrl: "./assets/benefits/card-3.svg",
     imageUrl: benefitImage7,
@@ -538,10 +547,10 @@ export const testimonials = [
   },
   {
     id: "3",
-    name: "Emily Davis",
-    review: "Adjusting volume levels has never been easier. Super convenient and effective!",
+    name: "Rolf Becker, Munich, Germany",
+    review: "HearMate has exceeded all my expectations. The sound is natural and balanced, and I no longer have to ask people to repeat themselves. I no longer have to fumble with tiny batteries! The app design is sleek and discreet, and the audiometry test is very precise. If you're on the fence, just go for it—you won't regret it.",
     rating: 4,
-    displayPicture: notification4,
+    displayPicture: review4,
     iconUrl: benefitIcon3,
     backgroundUrl: "./assets/benefits/card-4.svg",
     imageUrl: benefitImage7,
@@ -549,10 +558,10 @@ export const testimonials = [
   },
   {
     id: "4",
-    name: "James Wilson",
-    review: "I can now monitor my hearing health effortlessly. Highly recommend!",
+    name: "Barbra Brown, San Diago, CA, USA",
+    review: "I have consistently experienced discomfort when using hearing aids. However, HearMate provided a remarkably discreet solution that required no extra items to manage. From the very first use, it felt like the perfect fit. Kudos to HearMate.",
     rating: 4.5,
-    displayPicture: notification2,
+    displayPicture: review5,
     iconUrl: benefitIcon4,
     backgroundUrl: "./assets/benefits/card-5.svg",
     imageUrl: benefitImage7,
@@ -560,14 +569,48 @@ export const testimonials = [
   },
   {
     id: "5",
-    name: "Sophia Martinez",
-    review: "Affordable and high-quality! I no longer need expensive hearing aids.",
-    rating: 5,
-    displayPicture: notification2,
+    name: "Dr. Elizabeth French, Toronto, Canada",
+    review: "I've been using HearMate for about three months now, and it has completely transformed my life. The sound quality is crystal clear, and I can finally hear conversations in noisy environments without straining. Highly recommend this to anyone looking for a reliable and high-performing hearing aid!",
+    rating: 4.6,
+    displayPicture: review6,
     iconUrl: benefitIcon1,
     backgroundUrl: "./assets/benefits/card-6.svg",
     imageUrl: benefitImage7,
     light: true,
   },
+  {
+    id: "6",
+    name: "Henry Goh, Singapore",
+    review: "After trying several hearing aids over the years, I can confidently say that HearMate is my top choice. The noise reduction feature is incredible—it filters out background noise while amplifying speech, making it easy to follow conversations in crowded places. The app allows me to customize settings for different environments, which is incredibly convenient. Worth every penny!",
+    rating: 4.5,
+    displayPicture: review7,
+    iconUrl: benefitIcon4,
+    backgroundUrl: "./assets/benefits/card-5.svg",
+    imageUrl: benefitImage7,
+    light: true,
+  },
+  {
+    id: "7",
+    name: "Nadeem Moeen, Dubai, UAE",
+    review: "I have been using HearMate for more than a month, and I am extremely satisfied with its performance, to the extent that I have forgotten where I placed my expensive hearing aid. I would certainly endorse HearMate.",
+    rating: 4.6,
+    displayPicture: review8,
+    iconUrl: benefitIcon1,
+    backgroundUrl: "./assets/benefits/card-6.svg",
+    imageUrl: benefitImage7,
+    light: true,
+  },
+  {
+    id: "8",
+    name: "Afzal Rizvi, Lahore, Pakistan",
+    review: "The clarity of sound is remarkable—I can hear subtle details like birds chirping and leaves rustling, which I hadn’t noticed in years. The background noise suppression works wonders in busy environments. If you’re considering a hearing aid, HearMate is the one to get—it’s worth every cent!",
+    rating: 4,
+    displayPicture: review9,
+    iconUrl: benefitIcon3,
+    backgroundUrl: "./assets/benefits/card-4.svg",
+    imageUrl: benefitImage7,
+    light: true,
+  },
+
 ];
 

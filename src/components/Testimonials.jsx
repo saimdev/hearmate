@@ -43,22 +43,22 @@ const Testimonials = () => {
                     {testimonials.map((item) => (
                         <SwiperSlide key={item.id}>
                             <div
-                                className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
+                                className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%]  md:max-w-[24rem]"
                                 style={{ backgroundImage: `url(${item.backgroundUrl})` }}
                             >
-                                <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
+                                <div className="relative z-2 flex flex-col p-6 pointer-events-none md:min-h-[70vh]">
                                     <div className="flex items-center gap-3 mb-5">
-                                        <div className="w-10 h-10 object-cover overflow-hidden">
+                                        <div className="size-28 object-cover overflow-hidden rounded-full">
                                             <img
                                                 src={item.displayPicture}
                                                 alt={item.name}
-                                                className="w-full h-full object-cover rounded-full"
+                                                className="w-full h-full object-cover "
                                             />
                                         </div>
-                                        <h3 className="h5">{item.name}</h3>
+                                        <h3 className="text-base">{item.name}</h3>
                                     </div>
                                     <p className="body-2 mb-6 text-n-3">{item.review}</p>
-                                    <div className="flex items-center mt-auto">
+                                    <div className="flex items-center mt-auto absolute bottom-4 right-6 ">
                                         {/* <img src={item.iconUrl} width={48} height={48} alt={item.name} /> */}
                                         <p className="ml-auto font-code text-base font-bold text-n-1 uppercase tracking-wider">
                                             Rating: {item.rating} <span className="text-lg">
@@ -109,7 +109,10 @@ const Testimonials = () => {
                             ></video>
                         </div>
                     </div>
-
+                    <div className="my-3 text-xl">
+                        Luis Rodgriguez
+                        Madrid, Spain
+                    </div>
                     {/* </Swiper> */}
                 </div>
             </div>

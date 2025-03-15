@@ -31,7 +31,7 @@ const Pricing = () => {
           </div>
         </div>
         <Heading
-          title="Experience Pristine Audio with a HearMate Subscription."
+          title="Subscribe to Pristine Audio with HearMate"
           tag="Get started with "
           tagAccent="HearMate"
         />
@@ -40,14 +40,14 @@ const Pricing = () => {
           <LeftLine />
           <RightLine />
         </div>
-        <div className="flex justify-center mt-10">
+        {/* <div className="flex justify-center mt-10">
           <Button
             className="text-xs font-code font-bold tracking-wider uppercase"
             href="#pricing"
           >
             See the full details
           </Button>
-        </div>
+        </div> */}
       </div>
     </Section>
   );

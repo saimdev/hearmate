@@ -16,8 +16,8 @@ const Services = () => {
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="Intelligent auditory solutions tailored specifically for your needs."
-          text="HearMate utilizes cutting-edge technology to improve your auditory experience. Personalized Hearing Aid"
+          title="Intelligent Auditory Solutions Tailored for Your Needs"
+          text="HearMate utilizes cutting-edge technology to improve your auditory experience."
         />
 
         <div className="relative">

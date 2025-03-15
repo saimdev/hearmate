@@ -12,7 +12,7 @@ const Collaboration = () => {
     <Section id="hearing-solutions">
       <Heading
         className="container md:max-w-md lg:max-w-2xl"
-        title=" HearMate vs "
+        title="Hearing Aids vs "
         accent="HearMate"
       />
       <div className="container lg:flex">
@@ -45,9 +45,9 @@ const Collaboration = () => {
 
           <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
             <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
-              <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full animate-pulse">
+              <div className="w-[10rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full animate-pulse">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
-                  <div className="w-16 h-16">
+                  <div className="size-24">
                     <img
                       src={webLogo}
                       alt="Hear Mate logo"

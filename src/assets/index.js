@@ -92,6 +92,17 @@ import companyLogo5 from "./companylogos/yourlogo-5.png";
 import companyLogo6 from "./companylogos/yourlogo-6.png";
 import companyLogo7 from "./companylogos/yourlogo-7.png";
 
+
+import review1 from "./reviews/review-1.jpg"
+import review2 from "./reviews/review-2.jpg"
+import review3 from "./reviews/review-3.jpg"
+import review4 from "./reviews/review-4.jpg"
+import review5 from "./reviews/review-5.jpg"
+import review6 from "./reviews/review-6.jpg"
+import review7 from "./reviews/review-7.jpg"
+import review8 from "./reviews/review-8.jpg"
+import review9 from "./reviews/review-9.jpg"
+
 export {
   brainmaster,
   check,
@@ -176,5 +187,14 @@ export {
   companyLogo4,
   companyLogo5,
   companyLogo6,
-  companyLogo7
+  companyLogo7,
+  review1,
+  review2,
+  review3,
+  review4,
+  review5,
+  review6,
+  review7,
+  review8,
+  review9,
 };

@@ -1,5 +1,7 @@
+
 import { socials } from "../constants";
 import Section from "./Section";
+import webLogo from "../assets/hearmate1.svg";
 
 const Footer = () => {
   return (
@@ -7,11 +9,14 @@ const Footer = () => {
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
         <div className="flex flex-col gap-5 text-center sm:gap-2 sm:text-left">
           <p className="caption">
+            <div className="size-16 overflow-hidden p-3">
+              <img src={webLogo} alt="" className="h-full w-full object-cover" />
+            </div>
             <span className="text-purple-500">HearMate</span>
           </p>
           <p className="caption">
-            <a href="mailto:hearmate.app@gmail.com" className="text-[#5DCA76]">
-              hearmate.app@gmail.com
+            <a href="mailto:info@hearmate.app" className="text-[#5DCA76]">
+              info@hearmate.app
             </a>
           </p>
           <p className="caption text-n-4 lg:block">

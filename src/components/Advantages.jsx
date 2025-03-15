@@ -8,7 +8,7 @@ const Advantages = () => {
         <Section id="benefits">
             <div className="container">
                 <Heading
-                    title="Experience the Advantages of "
+                    title="Advantages of "
                     accent="HearMate"
                     text="HearMate combines commonly available devices with a touch of ingenuity to offer a distinctly personalized experience for its users."
                 />

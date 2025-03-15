@@ -34,15 +34,16 @@ const Hero = () => {
                 alt="Curve"
               />
             </span>{" "}
-            An Innovative and Cost-Effective Hearing Aid
-            Designed for Crystal Clear Sound Quality
+
 
           </h1>
-          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            HearMate provides a cost-effective and convenient over-the-counter solution to high-priced hearing
-            aids by converting your earphones and headphones into customized hearing aids. Experience features
-            such as noise reduction, volume adjustment, hearing assessments, and the ability to purchase
-            earphones and hands-free devices, all accessible through the HearMate application.
+          <h1 className="h1">
+            <span>
+              An Innovative and Economical Hearing Solution for Crystal Clear Sound
+            </span>
+          </h1>
+          <p className="body-1 max-w-3xl mx-auto mt-3 mb-6 text-n-2 lg:mb-8">
+            HearMate provides an economical and convenient over-the-counter hearing solution by converting your earphones and headphones into customized hearing aids.
           </p>
           <Button href="#" white>
             Download Now
@@ -71,12 +72,12 @@ const Hero = () => {
                     ))}
                   </ul>
                 </ScrollParallax> */}
-                <ScrollParallax isAbsolutelyPositioned>
+                {/* <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
                     title="HearMate Users"
                   />
-                </ScrollParallax>
+                </ScrollParallax> */}
               </div>
             </div>
             <Gradient />

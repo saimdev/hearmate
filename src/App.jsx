@@ -23,7 +23,7 @@ const App = () => {
         <Advantages />
         <ChooseUs />
         <Pricing />
-        <Roadmap />
+        {/* <Roadmap /> */}
         <Testimonials />
         <Footer />
       </div>

@@ -9,12 +9,19 @@ const Benefits = () => {
   return (
     <Section id="features">
       <div className="container relative z-2">
-        <Heading
-          className="md:max-w-md lg:max-w-2xl"
-          title="Experience the benefits of a Smart Hearing Aid
-equipped with exceptional features by choosing "
-          accent="HearMate"
-        />
+        <div
+          className={`md:max-w-md lg:max-w-2xl max-w-[50rem] mx-auto mb-12 lg:mb-20 md:text-center`}
+        >
+
+          <h2 className="h2">
+            <span className="text-purple-500">HearMate</span>
+
+
+          </h2>
+          <p className="h2">A Smart Hearing Aid with Exceptional Features</p>
+
+        </div>
+
         <div className="flex flex-wrap gap-10 mb-10">
           {benefits.map((item) => (
             <div

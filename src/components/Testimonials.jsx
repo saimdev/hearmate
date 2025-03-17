@@ -99,7 +99,7 @@ const Testimonials = () => {
                                 className="w-full aspect-video object-cover rounded-lg"
                                 src={reviewVideo}
                                 controls
-                                autoPlay
+                              
                                 loop
                                 muted
                             ></video>

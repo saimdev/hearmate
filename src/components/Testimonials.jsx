@@ -90,11 +90,7 @@ const Testimonials = () => {
 
                 <div className="mt-32">
                     <div>
-                        <Heading
-                            className="md:max-w-md lg:max-w-2xl"
-                            title="Video "
-                            accent="Review"
-                        />
+                        
                     </div>
                     {/* <Swiper> */}
                     <div className="relative p-3 bg-conic-gradient rounded-lg shadow-md">

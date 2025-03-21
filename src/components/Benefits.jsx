@@ -1,3 +1,4 @@
+import { curve } from "../assets";
 import Arrow from "../assets/svg/Arrow";
 import ClipPath from "../assets/svg/ClipPath";
 import { benefits } from "../constants";
@@ -13,10 +14,17 @@ const Benefits = () => {
           className={`md:max-w-md lg:max-w-2xl max-w-[50rem] mx-auto mb-12 lg:mb-20 md:text-center`}
         >
 
-          <h2 className="h2">
-            <span className="text-purple-500">HearMate</span>
-
-
+          <h2 className="h2 my-3">
+            <span className="inline-block relative">
+              <span style={{ color: "#5DCA76" }}>Hear</span>
+              <span className="text-purple-500">Mate</span>
+              <img
+                src={curve}
+                className="absolute top-full left-0 w-full xl:-mt-2"
+                width={624}
+                height={28}
+                alt="Curve"
+              /></span>
           </h2>
           <p className="h2">A Smart Hearing Aid with Exceptional Features</p>
 
@@ -25,7 +33,7 @@ const Benefits = () => {
         <div className="flex flex-wrap gap-10 mb-10">
           {benefits.map((item) => (
             <div
-              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
+              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%]  max-w-[24rem] md:max-w-[24rem]"
               style={{
                 backgroundImage: `url(${item.backgroundUrl})`,
               }}

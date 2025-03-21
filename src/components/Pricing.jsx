@@ -31,9 +31,9 @@ const Pricing = () => {
           </div>
         </div>
         <Heading
-          title="Subscribe to Pristine Audio with HearMate"
+          title="Subscribe to Pristine Audio with "
           tag="Get started with "
-          tagAccent="HearMate"
+          accent="HearMate"
         />
         <div className="relative">
           <PricingList />

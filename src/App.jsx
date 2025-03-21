@@ -1,5 +1,6 @@
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Advantages from "./components/Advantages";
+import AndriodMockUp from "./components/AndroidMockUp";
 import Benefits from "./components/Benefits";
 import ChooseUs from "./components/ChooseUs";
 import Collaboration from "./components/Collaboration";
@@ -17,6 +18,7 @@ const App = () => {
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Header />
         <Hero />
+        <AndriodMockUp />
         <Benefits />
         <Collaboration />
         <Services />

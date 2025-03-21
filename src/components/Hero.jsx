@@ -37,7 +37,7 @@ const Hero = () => {
 
 
           </h1>
-          <h1 className="h1">
+          <h1 className="h2">
             <span>
               An Innovative and Economical Hearing Solution for Crystal Clear Sound
             </span>
@@ -45,9 +45,9 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mt-3 mb-6 text-n-2 lg:mb-8">
             HearMate provides an economical and convenient over-the-counter hearing solution by converting your earphones and headphones into customized hearing aids.
           </p>
-          <Button href="#" white>
+          {/* <Button href="#" white>
             Download Now
-          </Button>
+          </Button> */}
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">

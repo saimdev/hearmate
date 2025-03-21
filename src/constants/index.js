@@ -307,7 +307,7 @@ export const pricing = [
     id: "0",
     title: "Pay Monthly",
     description: "Unbeatable Price",
-    price: "2.99",
+    price: "1.99",
     // features: [
     //   "Effective Noise Reduction for everyday environments",
     //   "Easy-to-use Volume Control for comfortable listening",
@@ -318,7 +318,7 @@ export const pricing = [
     id: "1",
     title: "Pay Annually",
     description: "Best Value",
-    price: "29.99",
+    price: "19.99",
     // features: [
     //   "Advanced Noise Cancellation to minimize distracting background sounds",
     //   "Personalized Sound Profiles tailored to your specific hearing needs",
@@ -329,7 +329,7 @@ export const pricing = [
     id: "2",
     title: "Lifetime",
     description: "Greatest Deal",
-    price: "149.99",
+    price: "99.99",
     // features: [
     //   "All Premium Features, including advanced noise cancellation ",
     //   "Premium Sound Profiles for the most refined listening experience",

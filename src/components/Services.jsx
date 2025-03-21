@@ -28,8 +28,8 @@ const Services = () => {
                 className="w-full h-full object-cover md:object-right opacity-25 md:opacity-100"
                 src={service1}
                 alt="Smartest AI"
-                width={800}
-                height={730}
+                width={700}
+                height={630}
               />
             </div>
             <div className="relative z-1 max-w-[17rem] ml-auto">

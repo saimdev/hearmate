@@ -2,19 +2,31 @@
 import { socials } from "../constants";
 import Section from "./Section";
 import webLogo from "../assets/hearmate1.svg";
+import { curve } from "../assets";
 
 const Footer = () => {
   return (
     <Section className="!px-0 !py-10" crosses>
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
-        <div className="size-16 overflow-hidden p-3">
+        <div className="size-16 overflow-hidden p-3 md:hidden">
           <img src={webLogo} alt="" className="h-full w-full object-cover" />
         </div>
         <div className="flex flex-col gap-5 text-center sm:gap-2 sm:text-left">
-          <p className="caption">
-
-            <span className="text-purple-500">HearMate</span>
-          </p>
+          <div className="size-16 overflow-hidden p-3 hidden md:block">
+            <img src={webLogo} alt="" className="h-full w-full object-cover" />
+          </div>
+          <div>
+            <span className="inline-block relative">
+              <span style={{ color: "#5DCA76" }}>Hear</span>
+              <span className="text-purple-500">Mate</span>
+              <img
+                src={curve}
+                className="absolute top-7 left-0 w-full xl:-mt-2"
+                width={624}
+                height={28}
+                alt="Curve"
+              /></span>
+          </div>
           <p className="caption">
             <a href="mailto:info@hearmate.app" className="text-[#5DCA76]">
               info@hearmate.app

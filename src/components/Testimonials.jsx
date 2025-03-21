@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 // import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
+import { Gradient } from "./design/Hero";
 
 const Testimonials = () => {
     return (
@@ -90,24 +91,37 @@ const Testimonials = () => {
 
                 <div className="mt-32">
                     <div>
-                        
+
                     </div>
                     {/* <Swiper> */}
-                    <div className="relative p-3 bg-conic-gradient rounded-lg shadow-md">
-                        <div className="border  rounded-2xl overflow-hidden">
-                            <video
-                                className="w-full aspect-video object-cover rounded-lg"
-                                src={reviewVideo}
-                                controls
-                                autoPlay
-                                loop
-                                muted
-                            ></video>
+
+
+
+                    <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
+                        <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
+                            <div className="relative bg-n-8 rounded-[1rem]">
+                                {/* <div className="h-[1.4rem] bg-n-6 rounded-t-[0.9rem]"></div> */}
+                                <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
+                                    <video
+
+                                        className="object-cover w-full h-full rounded-2xl"
+                                        width={1024}
+                                        height={490}
+                                        alt="AI robot image"
+                                        src={reviewVideo}
+                                        controls
+                                        autoPlay
+                                        loop
+                                        muted
+                                    ></video>
+                                </div>
+                            </div>
+                            <Gradient />
                         </div>
-                    </div>
-                    <div className="my-3 text-xl">
-                        Luis Rodgriguez
-                        Madrid, Spain
+                        <div className="my-3 text-xl">
+                            Luis Rodgriguez,
+                            Madrid, Spain
+                        </div>
                     </div>
                     {/* </Swiper> */}
                 </div>

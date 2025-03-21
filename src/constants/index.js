@@ -71,15 +71,15 @@ export const navigation = [
     title: "Solution",
     url: "#hearing-solutions",
   },
-  {
-    id: "1",
-    title: "Usage",
-    url: "#how-to-use",
-  },
+  // {
+  //   id: "1",
+  //   title: "Advantages",
+  //   url: "#how-to-use",
+  // },
   {
     id: "6",
-    title: "Benefits",
-    url: "#benefits",
+    title: "Advantages",
+    url: "#advantages",
   },
   {
     id: "6",
@@ -93,8 +93,8 @@ export const navigation = [
   },
   {
     id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
+    title: "Reviews",
+    url: "#testimonials",
   },
   // {
   //   id: "4",

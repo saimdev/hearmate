@@ -12,6 +12,7 @@ import "swiper/css";
 // import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import { Gradient } from "./design/Hero";
+import CustomVideoPlayer from "./CustomVideoPlayer";
 
 const Testimonials = () => {
     return (
@@ -47,7 +48,7 @@ const Testimonials = () => {
                                 className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%]  md:max-w-[24rem]"
                                 style={{ backgroundImage: `url(${item.backgroundUrl})` }}
                             >
-                                <div className="relative z-2 flex flex-col p-6 pointer-events-none md:min-h-[70vh]">
+                                <div className="relative z-2 flex flex-col p-6 pointer-events-none md:min-h-[30rem]">
                                     <div className="flex items-center gap-3 mb-5">
                                         <div className="size-28 object-cover overflow-hidden rounded-full">
                                             <img
@@ -106,14 +107,17 @@ const Testimonials = () => {
                             <div className="relative bg-n-8 rounded-[1rem]">
                                 {/* <div className="h-[1.4rem] bg-n-6 rounded-t-[0.9rem]"></div> */}
                                 <div className="aspect rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
-
-                                    <video
-                                        className="w-full aspect-video  object-cover rounded-lg"
+                                    {/* <video
+                                        className="w-full object-cover rounded-lg"
                                         src={reviewVideo}
                                         controls
                                         loop
                                         muted
-                                    ></video>
+                                        playsInline
+                                        onLoadedMetadata={(e) => console.log("Video loaded", e.target)}
+                                    ></video> */}
+                                    <CustomVideoPlayer src={reviewVideo} />
+
                                 </div>
                             </div>
                             <Gradient />
@@ -127,7 +131,7 @@ const Testimonials = () => {
                 </div>
             </div>
 
-        </Section>
+        </Section >
     );
 };
 

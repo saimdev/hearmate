@@ -86,3 +86,8 @@
 .-rotate-360 {
   @apply rotate-[-360deg];
 }
+
+video::-webkit-media-controls {
+  display: flex !important;
+  opacity: 1 !important;
+}

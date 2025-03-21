@@ -5,7 +5,7 @@ import { Gradient } from "./design/Services";
 
 const Advantages = () => {
     return (
-        <Section id="benefits">
+        <Section id="advantages">
             <div className="container">
                 <Heading
                     title="Advantages of "

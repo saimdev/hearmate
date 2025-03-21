@@ -13,7 +13,7 @@ import SplashScreen from "../assets/mockups/splash.svg"
 
 const AndriodMockUp = () => {
     return (
-        <Section id="pricing" className="overflow-hidden">
+        <Section id="" className="overflow-hidden">
             <div className="container relative z-2">
                 {/* <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
                     <img

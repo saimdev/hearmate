@@ -56,7 +56,7 @@ const Hero = () => {
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
                   src={robot}
-                  className="object-cover w-full h-full rounded-2xl"
+                  className="aspect-video object-cover w-full h-full rounded-2xl"
                   width={1024}
                   height={490}
                   alt="AI robot image"

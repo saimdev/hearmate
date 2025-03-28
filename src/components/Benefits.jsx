@@ -16,8 +16,8 @@ const Benefits = () => {
 
           <h2 className="h2 my-3">
             <span className="inline-block relative">
-              <span style={{ color: "#5DCA76" }}>Hear</span>
-              <span className="text-purple-500">Mate</span>
+              <span style={{ color: "#B84646" }}>Hear</span>
+              <span className="text-[#0058A5]">Mate</span>
               <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2"

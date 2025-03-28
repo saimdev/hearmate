@@ -21,7 +21,7 @@ import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
 import background from "./background.jpg";
 
-import curve from "./hero/curve.png";
+import curve from "./hero/curve.svg";
 import robot from "./hero/hero.jpg";
 import heroBackground from "./hero/hero-background.jpg";
 

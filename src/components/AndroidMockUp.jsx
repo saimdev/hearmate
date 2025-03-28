@@ -8,6 +8,8 @@ import { LeftLine, RightLine } from "./design/Pricing";
 
 import HomeScreen from "../assets/mockups/home.svg"
 import SplashScreen from "../assets/mockups/splash.svg"
+import TestScreen from "../assets/mockups/test_start.svg"
+import ReporthScreen from "../assets/mockups/report.svg"
 
 
 
@@ -41,12 +43,18 @@ const AndriodMockUp = () => {
                     accent="HearMate"
                 />
                 <div className="relative">
-                    <div className="flex flex-wrap items-center justify-center gap-20">
+                    <div className="grid grid-cols-1 md:grid-cols-4 place-items-center gap-4">
                         <div>
                             <img src={SplashScreen} alt="" />
                         </div>
                         <div>
                             <img src={HomeScreen} alt="" />
+                        </div>
+                        <div>
+                            <img src={TestScreen} alt="" />
+                        </div>
+                        <div>
+                            <img src={ReporthScreen} alt="" />
                         </div>
                     </div>
                     <LeftLine />

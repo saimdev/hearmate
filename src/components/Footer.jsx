@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <Section className="!px-0 !py-10" crosses>
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
-        <div className="size-16 md:size-20 lg:size-24 xl:size-28 overflow-hidden p-3 md:hidden">
+        <div className="size-20 lg:size-24 xl:size-28 overflow-hidden p-3 md:hidden">
           <img src={webLogo} alt="" className="h-full w-full object-cover" />
         </div>
         <div className="flex flex-col gap-5 text-center sm:gap-2 sm:text-left">

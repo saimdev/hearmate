@@ -14,6 +14,13 @@ import ReporthScreen from "../assets/mockups/report.svg"
 
 
 const AndriodMockUp = () => {
+
+    const MockUps = [
+        { name: "Splash Screen", mockup: HomeScreen },
+        { name: "Home Screen", mockup: SplashScreen },
+        { name: "Test Screen", mockup: TestScreen },
+        { name: "Report Screen", mockup: ReporthScreen },
+    ]
     return (
         <Section id="" className="overflow-hidden">
             <div className="container relative z-2">
@@ -43,19 +50,13 @@ const AndriodMockUp = () => {
                     accent="HearMate"
                 />
                 <div className="relative">
-                    <div className="grid grid-cols-1 md:grid-cols-4 place-items-center gap-4">
-                        <div>
-                            <img src={SplashScreen} alt="" />
-                        </div>
-                        <div>
-                            <img src={HomeScreen} alt="" />
-                        </div>
-                        <div>
-                            <img src={TestScreen} alt="" />
-                        </div>
-                        <div>
-                            <img src={ReporthScreen} alt="" />
-                        </div>
+                    <div className="grid grid-cols-1 md:grid-cols-4 place-items-center ">
+                        {MockUps.map((mockup, index) => (
+                            <div key={index} className=" h-5/6 overflow-hidden">
+                                <img src={mockup.mockup} alt={mockup.name} className="h-full w-full object-cover" />
+                            </div  >
+                        ))}
+
                     </div>
                     <LeftLine />
                     <RightLine />

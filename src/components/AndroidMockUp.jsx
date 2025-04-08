@@ -6,20 +6,22 @@ import Heading from "./Heading";
 import Section from "./Section";
 import { LeftLine, RightLine } from "./design/Pricing";
 
-import HomeScreen from "../assets/mockups/home.svg"
-import SplashScreen from "../assets/mockups/splash.svg"
-import TestScreen from "../assets/mockups/test_start.svg"
-import ReporthScreen from "../assets/mockups/report.svg"
+import Screen_1 from "../assets/mockups/Frame_1.svg"
+import Screen_2 from "../assets/mockups/Frame_2.svg"
+import Screen_3 from "../assets/mockups/Frame_3.svg"
+import Screen_4 from "../assets/mockups/Frame_4.svg"
+import Screen_5 from "../assets/mockups/Frame_5.svg"
 
 
 
 const AndriodMockUp = () => {
 
     const MockUps = [
-        { name: "Splash Screen", mockup: HomeScreen },
-        { name: "Home Screen", mockup: SplashScreen },
-        { name: "Test Screen", mockup: TestScreen },
-        { name: "Report Screen", mockup: ReporthScreen },
+        { name: "Screen 1", mockup: Screen_1 },
+        { name: "Screen 2", mockup: Screen_2 },
+        { name: "Screen 3", mockup: Screen_3 },
+        { name: "Screen 4", mockup: Screen_4 },
+        { name: "Screen 5", mockup: Screen_5 },
     ]
     return (
         <Section id="" className="overflow-hidden">
@@ -50,9 +52,9 @@ const AndriodMockUp = () => {
                     accent="HearMate"
                 />
                 <div className="relative">
-                    <div className="grid grid-cols-1 md:grid-cols-4 place-items-center ">
+                    <div className="flex flex-wrap md:flex-nowrap items-center justify-center gap-3 md:gap-1">
                         {MockUps.map((mockup, index) => (
-                            <div key={index} className=" h-5/6 overflow-hidden">
+                            <div key={index} className=" lg:h-full h-5/6 overflow-hidden ">
                                 <img src={mockup.mockup} alt={mockup.name} className="h-full w-full object-cover" />
                             </div  >
                         ))}

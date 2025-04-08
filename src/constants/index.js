@@ -305,6 +305,17 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
+    title: "Free",
+    description: "First 500 Users.",
+    price: "0",
+    // features: [
+    //   "Effective Noise Reduction for everyday environments",
+    //   "Easy-to-use Volume Control for comfortable listening",
+    //   "Basic Sound Profiles for personalized audio experiences",
+    // ],
+  },
+  {
+    id: "1",
     title: "Pay Monthly",
     description: "Unbeatable Price",
     price: "1.99",
@@ -315,7 +326,7 @@ export const pricing = [
     // ],
   },
   {
-    id: "1",
+    id: "2",
     title: "Pay Annually",
     description: "Best Value",
     price: "19.99",
@@ -325,17 +336,17 @@ export const pricing = [
     //   "Built-in Hearing Tests to monitor your hearing health over time",
     // ],
   },
-  {
-    id: "2",
-    title: "Lifetime",
-    description: "Greatest Deal",
-    price: "99.99",
-    // features: [
-    //   "All Premium Features, including advanced noise cancellation ",
-    //   "Premium Sound Profiles for the most refined listening experience",
-    //   "Remote Audio Adjustments (if applicable)", // Only include if this feature exists
-    // ],
-  },
+  // {
+  //   id: "3",
+  //   title: "Lifetime",
+  //   description: "Greatest Deal",
+  //   price: "99.99",
+  //   // features: [
+  //   //   "All Premium Features, including advanced noise cancellation ",
+  //   //   "Premium Sound Profiles for the most refined listening experience",
+  //   //   "Remote Audio Adjustments (if applicable)", // Only include if this feature exists
+  //   // ],
+  // },
 ];
 
 export const benefits = [

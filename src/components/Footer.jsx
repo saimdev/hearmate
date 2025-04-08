@@ -12,20 +12,22 @@ const Footer = () => {
           <img src={webLogo} alt="" className="h-full w-full object-cover" />
         </div>
         <div className="flex flex-col gap-5 text-center sm:gap-2 sm:text-left">
-          <div className="size-16 md:size-20 lg:size-24 xl:size-28 overflow-hidden p-3 hidden md:block">
-            <img src={webLogo} alt="" className="h-full w-full object-cover" />
-          </div>
-          <div>
-            <span className="inline-block relative text-3xl">
-              <span style={{ color: "#B84646" }}>Hear</span>
-              <span className="text-[#0058A5]">Mate</span>
-              <img
-                src={curve}
-                className="absolute top-10 left-0 w-full xl:-mt-2"
-                width={624}
-                height={28}
-                alt="Curve"
-              /></span>
+          <div className="flex items-center gap-3">
+            <div className="size-16 md:size-20 lg:size-24 xl:size-28 overflow-hidden p-3 hidden md:block">
+              <img src={webLogo} alt="" className="h-full w-full object-cover" />
+            </div>
+            <div>
+              <span className="inline-block relative text-3xl">
+                <span style={{ color: "#B84646" }}>Hear</span>
+                <span className="text-[#0058A5]">Mate</span>
+                <img
+                  src={curve}
+                  className="absolute top-10 left-0 w-full xl:-mt-2"
+                  width={624}
+                  height={28}
+                  alt="Curve"
+                /></span>
+            </div>
           </div>
           <p className="caption">
             <a href="mailto:info@hearmate.app" className="text-[#5DCA76]">

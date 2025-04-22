@@ -305,8 +305,8 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Free",
-    description: "First 500 Users.",
+    title: "Exclusive Promotion",
+    description: "Next 500 users",
     price: "0",
     // features: [
     //   "Effective Noise Reduction for everyday environments",

@@ -1,5 +1,5 @@
-import { MouseParallax } from "react-just-parallax";
-import { smallSphere, stars } from "../assets";
+// import { MouseParallax } from "react-just-parallax";
+// import { smallSphere, stars } from "../assets";
 import Button from "./Button";
 import Heading from "./Heading";
 
@@ -18,8 +18,8 @@ const AndriodMockUp = () => {
 
     const MockUps = [
         { name: "Screen 1", mockup: Screen_1 },
-        { name: "Screen 2", mockup: Screen_2 },
         { name: "Screen 3", mockup: Screen_3 },
+        { name: "Screen 2", mockup: Screen_2 },
         { name: "Screen 4", mockup: Screen_4 },
         { name: "Screen 5", mockup: Screen_5 },
     ]

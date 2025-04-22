@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="size-16 md:size-20 lg:size-24 xl:size-28 overflow-hidden p-3 hidden md:block">
               <img src={webLogo} alt="" className="h-full w-full object-cover" />
             </div>
-            <div>
+            <div className="space-y-5">
               <span className="inline-block relative text-3xl">
                 <span style={{ color: "#B84646" }}>Hear</span>
                 <span className="text-[#0058A5]">Mate</span>
@@ -27,17 +27,13 @@ const Footer = () => {
                   height={28}
                   alt="Curve"
                 /></span>
+              <p className="caption">
+                <a href="mailto:info@hearmate.app" className="text-[#5DCA76]">
+                  info@hearmate.app
+                </a>
+              </p>
             </div>
           </div>
-          <p className="caption">
-            <a href="mailto:info@hearmate.app" className="text-[#5DCA76]">
-              info@hearmate.app
-            </a>
-          </p>
-          <p className="caption text-n-4 lg:block">
-            Powered by <a href="https://www.thecorise.com">Corise</a> ©{" "}
-            {new Date().getFullYear()}. All rights reserved.
-          </p>
         </div>
 
         <ul className="flex gap-5 flex-wrap">
@@ -59,6 +55,10 @@ const Footer = () => {
           ))}
         </ul>
       </div>
+      <p className="caption text-n-4 lg:block text-center mt-10">
+        Powered by <a href="https://www.thecorise.com">Corise</a> ©{" "}
+        {new Date().getFullYear()}. All rights reserved.
+      </p>
     </Section>
   );
 };

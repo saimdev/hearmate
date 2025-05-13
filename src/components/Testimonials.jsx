@@ -63,10 +63,10 @@ const Testimonials = () => {
                                             {item.name.split(",").slice(1).join(",")}
                                         </h3>
                                     </div>
-                                    <p className="body-2 mb-6 text-n-3">{item.review}</p>
+                                    <p className="body-2 mb-6 text-n-7">{item.review}</p>
                                     <div className="flex items-center mt-auto absolute bottom-4 right-6 ">
                                         {/* <img src={item.iconUrl} width={48} height={48} alt={item.name} /> */}
-                                        <p className="ml-auto font-code text-base font-bold text-n-1 uppercase tracking-wider">
+                                        <p className="ml-auto font-code text-base font-bold text-n-7 uppercase tracking-wider">
                                             Rating: {item.rating} <span className="text-lg">
                                                 ⭐
                                             </span>
@@ -74,7 +74,7 @@ const Testimonials = () => {
                                     </div>
                                 </div>
                                 {item.light && <GradientLight />}
-                                <div className="absolute inset-0.5 bg-n-8" style={{ clipPath: "url(#benefits)" }}>
+                                <div className="absolute inset-0.5 bg-n-1" style={{ clipPath: "url(#benefits)" }}>
                                     <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-20">
                                         {/* {item.displayPicture && (
                                             <img

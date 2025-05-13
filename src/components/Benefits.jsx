@@ -40,8 +40,8 @@ const Benefits = () => {
               key={item.id}
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-                <h3 className="h5 mb-5">{item.title}</h3>
-                <p className="body-2 mb-6 text-n-3">{item.text}</p>
+                <h3 className="h5 mb-5 text-n-8">{item.title}</h3>
+                <p className="body-2 mb-6 text-n-5">{item.text}</p>
                 <div className="flex items-center mt-auto">
                   {/* <img
                     src={item.iconUrl}
@@ -49,7 +49,7 @@ const Benefits = () => {
                     height={48}
                     alt={item.title}
                   /> */}
-                  <span className={`bg-purple-600 p-4 rounded-2xl`}>
+                  <span className={`bg-purple-600 p-4 rounded-2xl text-n-1`}>
                     <item.icon size={28} />
                   </span>
                   {/* <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
@@ -61,7 +61,7 @@ const Benefits = () => {
               {item.light && <GradientLight />}
 
               <div
-                className="absolute inset-0.5 bg-n-8"
+                className="absolute inset-0.5 bg-n-1"
                 style={{ clipPath: "url(#benefits)" }}
               >
                 <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-20">

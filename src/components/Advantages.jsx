@@ -17,7 +17,7 @@ const Advantages = () => {
                     {advantagesData.map((advantage) => (
                         <div
                             key={advantage.id}
-                            className="relative flex flex-col items-center p-8 border border-n-1/10 rounded-3xl overflow-hidden text-center shadow-lg"
+                            className="relative flex flex-col items-center p-8 border border-n-4 rounded-3xl overflow-hidden text-center shadow-lg"
                         >
                             {/* <img
                                 className="w-20 h-20 object-cover mb-4 rounded-full"
@@ -28,7 +28,7 @@ const Advantages = () => {
                             /> */}
                             <advantage.icon size={56} className="m-3" />
                             <h3 className="h5 mb-3">{advantage.title}</h3>
-                            <p className="body-2 text-n-3">{advantage.description}</p>
+                            <p className="body-2 text-n-5">{advantage.description}</p>
                         </div>
                     ))}
                 </div>

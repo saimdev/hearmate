@@ -42,7 +42,7 @@ const Hero = () => {
               An Innovative and Economical Hearing Solution for Crystal Clear Sound
             </span>
           </h1>
-          <p className="body-1 max-w-3xl mx-auto mt-3 mb-6 text-n-2 lg:mb-8">
+          <p className="body-1 max-w-3xl mx-auto mt-3 mb-6 text-n-4 lg:mb-8">
             HearMate provides an economical and convenient over-the-counter hearing solution by converting your earphones and headphones into customized hearing aids.
           </p>
           {/* <Button href="#" white>
@@ -84,13 +84,13 @@ const Hero = () => {
           </div>
           {/* Hero background image */}
           <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
-            <img
+            {/* <img
               src={heroBackground}
               className="w-full"
               width={1440}
               height={1800}
               alt="hero image"
-            />
+            /> */}
           </div>
           <BackgroundCircles />
         </div>

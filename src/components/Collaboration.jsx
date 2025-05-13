@@ -35,7 +35,7 @@ const Collaboration = () => {
               </li>
             ))}
           </ul>
-          <Button className="z-[9]">Try it now</Button>
+          <Button className="z-[9] text-color-4">Try it now</Button>
         </div>
 
         <div className="mt-4 lg:ml-auto xl:w-[38rem]">

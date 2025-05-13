@@ -65,7 +65,7 @@ const AndriodMockUp = () => {
                 </div>
                 <div className="flex justify-center mt-10">
                     <Button
-                        className="text-xs font-code font-bold tracking-wider uppercase"
+                        className="text-xs font-code font-bold  tracking-wider uppercase"
                         href="#pricing"
                     >
                         Download

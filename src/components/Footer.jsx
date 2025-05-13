@@ -40,7 +40,7 @@ const Footer = () => {
           {socials.map((item) => (
             <li key={item.id}>
               <a
-                className="flex items-center justify-center w-10 h-10 bg-n-7 rounded-full transition-colors hover:bg-n-6"
+                className="flex items-center justify-center w-10 h-10 bg-n-1 rounded-full transition-colors hover:shadow-lg hover:border-2 hover:border-color-3"
                 href={item.url}
                 target="_blank"
               >

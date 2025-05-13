@@ -59,7 +59,7 @@ const ChooseUs = () => {
                             <h2>
                                 <button
                                     type="button"
-                                    className="flex md:items-center justify-between w-full py-5 font-medium text-n-1 border-b border-gray-200 dark:border-gray-700 text-xl md:h5 mb-3 gap-3"
+                                    className="flex md:items-center justify-between w-full py-5 font-medium text-n-5 border-b border-gray-200 text-xl md:h5 mb-3 gap-3"
                                     onClick={() => toggleAccordion(item.id)}
                                     aria-expanded={openAccordion === item.id}
                                     aria-controls={`accordion-body-${item.id}`}
@@ -79,7 +79,7 @@ const ChooseUs = () => {
                                     }`}
                             >
                                 <div className="py-5 ">
-                                    <p className="body-1 text-n-2">{item.content}</p>
+                                    <p className="body-1 text-n-8">{item.content}</p>
                                 </div>
                             </div>
                         </div>

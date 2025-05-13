@@ -8,10 +8,10 @@ const PricingList = () => {
       {pricing.map((item) => (
         <div
           key={item.id}
-          className="w-full min-w-[20rem] max-lg:w-full max-h-96 px-6 bg-n-8 border border-n-6 rounded-[2rem] lg:w-auto py-14  even:border-3  [&>h3]:first:text-color-2 [&>h3]:even:text-color-1 [&>h3]:last:text-color-4"
+          className="w-full min-w-[20rem] max-lg:w-full max-h-96 px-6 bg-n-1 border border-n-2 rounded-[2rem] lg:w-auto py-14  even:border-3  [&>h3]:first:text-color-2 [&>h3]:even:text-color-1 [&>h3]:last:text-color-4"
         >
           <h3 className="h4 mb-4">{item.title}</h3>
-          <p className={`body-2 min-h-[4rem] mb-3 text-n-1/50 ${item?.id == 0 ? "text-color-3 font-bold text-base" : ""}`}>
+          <p className={`body-2 min-h-[4rem] mb-3 text-n-8/80 ${item?.id == 0 ? "text-color-3 font-bold text-base" : ""}`}>
             {item.description}
           </p>
           <div className="flex items-center h-[5.5rem] mb-6 justify-center">

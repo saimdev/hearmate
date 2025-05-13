@@ -9,7 +9,7 @@ const Heading = ({ className, title, accent, text, tag, tagAccent }) => {
       {tag && (
         <Tagline className="mb-4 md:justify-center">
           {tag}
-          {tagAccent && <span className="text-purple-500">{tagAccent}</span>}
+          {tagAccent && <span className="text-color-3">{tagAccent}</span>}
         </Tagline>
       )}
       {title && (

@@ -358,6 +358,7 @@ export const benefits = [
     icon: AudioLines,
     imageUrl: benefitImage2,
     bg_color: "red",
+    color: 2,
   },
   {
     id: "1",
@@ -368,6 +369,7 @@ export const benefits = [
     imageUrl: benefitImage3,
     light: true,
     bg_color: "red",
+    color: 1,
   },
   {
     id: "2",
@@ -377,6 +379,7 @@ export const benefits = [
     icon: Volume2,
     imageUrl: benefitImage4,
     bg_color: "red",
+    color: 4,
   },
   {
     id: "3",
@@ -387,6 +390,7 @@ export const benefits = [
     imageUrl: benefitImage5,
     light: true,
     bg_color: "red",
+    color: 3,
   },
   {
     id: "4",
@@ -396,6 +400,7 @@ export const benefits = [
     icon: Activity,
     imageUrl: benefitImage6,
     bg_color: "red",
+    color: 2,
   },
   {
     id: "5",
@@ -406,6 +411,7 @@ export const benefits = [
     imageUrl: benefitImage7,
     bg_color: "red",
     light: true,
+    color: 1,
   },
 ];
 

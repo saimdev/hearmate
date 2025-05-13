@@ -44,50 +44,76 @@ const Testimonials = () => {
                 >
                     {testimonials.map((item) => (
                         <SwiperSlide key={item.id}>
-                            <div
-                                className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%]  md:max-w-[24rem]"
-                                style={{ backgroundImage: `url(${item.backgroundUrl})` }}
-                            >
-                                <div className="relative z-2 flex flex-col p-6 pointer-events-none md:min-h-[30rem]">
-                                    <div className="flex items-center gap-3 mb-5">
-                                        <div className="size-28 object-cover overflow-hidden rounded-full">
-                                            <img
-                                                src={item.displayPicture}
-                                                alt={item.name}
-                                                className="w-full h-full object-cover "
-                                            />
+                            <div className="w-full max-w-[24rem] rounded-2xl shadow-lg border transition-all duration-300 overflow-hidden flex flex-col h-full">
+                                <div className="flex flex-col p-6 flex-grow">
+                                    {/* User info with avatar */}
+                                    <div className="flex items-start gap-4 mb-6">
+                                        <div className="flex-shrink-0">
+                                            <div className="size-20 rounded-full overflow-hidden border-2 border-color-2/50">
+                                                <img
+                                                    src={item.displayPicture}
+                                                    alt={item.name}
+                                                    className="w-full h-full object-cover"
+                                                />
+                                            </div>
                                         </div>
-                                        <h3 className="text-base">
-                                            {item.name.split(",")[0]}
-                                            <br />
-                                            {item.name.split(",").slice(1).join(",")}
-                                        </h3>
+                                        <div>
+                                            <h3 className="text-lg font-semibold text-n-7">
+                                                {item.name.split(",")[0]}
+                                                <span className="block text-sm font-normal text-n-4">
+                                                    {item.name.split(",").slice(1).join(",")}
+                                                </span>
+                                            </h3>
+                                        </div>
                                     </div>
-                                    <p className="body-2 mb-6 text-n-7">{item.review}</p>
-                                    <div className="flex items-center mt-auto absolute bottom-4 right-6 ">
-                                        {/* <img src={item.iconUrl} width={48} height={48} alt={item.name} /> */}
-                                        <p className="ml-auto font-code text-base font-bold text-n-7 uppercase tracking-wider">
-                                            Rating: {item.rating} <span className="text-lg">
-                                                ⭐
-                                            </span>
-                                        </p>
+
+                                    {/* Review text with read more functionality */}
+                                    <div className="mb-6 flex-grow">
+                                        <div className="relative">
+                                            <p className={`text-n-6 italic leading-relaxed ${item.review.length > 150 ? 'line-clamp-4' : ''}`}>
+                                                &ldquo;{item.review}&rdquo;
+                                            </p>
+                                            {item.review.length > 150 && (
+                                                <button
+                                                    className="text-color-1 font-medium text-sm mt-2 hover:underline focus:outline-none"
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        e.stopPropagation();
+                                                        const paragraph = e.target.previousElementSibling;
+                                                        paragraph.classList.toggle('line-clamp-4');
+                                                        e.target.textContent = paragraph.classList.contains('line-clamp-4')
+                                                            ? 'View More'
+                                                            : 'View Less';
+                                                    }}
+                                                >
+                                                    View More
+                                                </button>
+                                            )}
+                                        </div>
+                                    </div>
+
+                                    {/* Rating section */}
+                                    <div className="flex items-center justify-between mt-auto">
+                                        <div className="flex items-center">
+                                            {[...Array(5)].map((_, i) => (
+                                                <span
+                                                    key={i}
+                                                    className={`text-xl ${i < item.rating ? 'text-amber-400' : 'text-n-3'}`}
+                                                >
+                                                    ★
+                                                </span>
+                                            ))}
+                                        </div>
+                                        <div className="bg-color-1/10 px-3 py-1 rounded-full">
+                                            <p className="font-code text-sm font-bold text-color-1">
+                                                {item.rating.toFixed(1)}
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                                {item.light && <GradientLight />}
-                                <div className="absolute inset-0.5 bg-n-1" style={{ clipPath: "url(#benefits)" }}>
-                                    <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-20">
-                                        {/* {item.displayPicture && (
-                                            <img
-                                                src={item.displayPicture}
-                                                width={384}
-                                                height={366}
-                                                alt={item.name}
-                                                className="w-full h-full object-cover rounded-full"
-                                            />
-                                        )} */}
-                                    </div>
-                                </div>
-                                <ClipPath />
+
+                                {/* Decorative accent */}
+                                <div className="h-2 w-full bg-gradient-to-r from-color-1 to-color-2"></div>
                             </div>
                         </SwiperSlide>
                     ))}

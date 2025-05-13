@@ -6,6 +6,15 @@ import Heading from "./Heading";
 import Section from "./Section";
 import { GradientLight } from "./design/Benefits";
 
+
+const colorMap = {
+  1: 'border-color-1',
+  2: 'border-color-2',
+  3: 'border-color-3',
+  4: 'border-color-4',
+  5: 'border-color-5',
+};
+
 const Benefits = () => {
   return (
     <Section id="features">
@@ -30,13 +39,13 @@ const Benefits = () => {
 
         </div>
 
-        <div className="flex flex-wrap gap-10 mb-10">
+        <div className="flex justify-center flex-wrap gap-10 mb-10">
           {benefits.map((item) => (
             <div
-              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%]  max-w-[24rem] md:max-w-[24rem]"
-              style={{
-                backgroundImage: `url(${item.backgroundUrl})`,
-              }}
+              className={`block relative overflow-hidden  bg-no-repeat bg-[length:100%_100%] rounded-[1.8rem] border-4 ${colorMap[item.color]} max-w-[24rem] md:max-w-[24rem]`}
+              // style={{
+              //   backgroundImage: `url(${item.backgroundUrl})`,
+              // }}
               key={item.id}
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
@@ -58,11 +67,11 @@ const Benefits = () => {
                   <Arrow /> */}
                 </div>
               </div>
-              {item.light && <GradientLight />}
+              {/* {item.light && <GradientLight />} */}
 
               <div
-                className="absolute inset-0.5 bg-n-1"
-                style={{ clipPath: "url(#benefits)" }}
+                className="absolute inset-0 bg-n-1"
+              // style={{ clipPath: "url(#benefits)" }}
               >
                 <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-20">
                   {item.imageUrl && (
@@ -71,7 +80,7 @@ const Benefits = () => {
                       width={384}
                       height={366}
                       alt={item.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover rounded-3xl"
                     />
                   )}
                 </div>

@@ -27,7 +27,7 @@ const Heading = ({ className, title, accent, text, tag, tagAccent }) => {
             /></span>}
         </h2>
       )}
-      {text && <p className="body-2 mt-4 text-n-4">{text}</p>}
+      {text && <p className="body-4 mt-4 text-n-8">{text}</p>}
     </div>
   );
 };

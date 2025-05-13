@@ -48,7 +48,7 @@ const CustomVideoPlayer = ({ src }) => {
 
     return (
         <div
-            className="max-w-full mx-auto relative bg-black rounded-lg overflow-hidden"
+            className="max-w-full mx-auto relative bg-black rounded-[1rem] overflow-hidden"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
@@ -56,7 +56,7 @@ const CustomVideoPlayer = ({ src }) => {
             <video
                 ref={videoRef}
                 src={src}
-                className="w-full rounded-lg"
+                className="w-full rounded-[1rem]"
                 onTimeUpdate={handleTimeUpdate}
             ></video>
 

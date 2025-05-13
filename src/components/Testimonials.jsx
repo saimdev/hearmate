@@ -98,7 +98,7 @@ const Testimonials = () => {
                                             {[...Array(5)].map((_, i) => (
                                                 <span
                                                     key={i}
-                                                    className={`text-xl ${i < item.rating ? 'text-amber-400' : 'text-n-3'}`}
+                                                    className={`text-3xl ${i < item.rating ? 'text-amber-400' : 'text-n-3'}`}
                                                 >
                                                     ★
                                                 </span>

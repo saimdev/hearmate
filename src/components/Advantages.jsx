@@ -14,12 +14,12 @@ const Advantages = () => {
                     text="HearMate combines commonly available devices with a touch of ingenuity to offer a distinctly personalized experience for its users."
                 />
                 {/* Responsive Grid Layout */}
-                <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {advantagesData.map((advantage) => (
-                        <PixelCard variant="blue" key={advantage.id} className="transition-all duration-200 ease-in-out hover:shadow-2xl">
+                        <PixelCard variant="blue" key={advantage.id} className="w-full transition-all duration-200 ease-in-out hover:shadow-2xl">
 
                             <div
-                                className="absolute flex flex-col items-center p-8 rounded-3xl overflow-hidden text-center "
+                                className="absolute flex flex-col items-center p-8 rounded-3xl overflow-hidden text-center space-y-4"
                             >
                                 {/* <img
                                 className="w-20 h-20 object-cover mb-4 rounded-full"
@@ -28,8 +28,8 @@ const Advantages = () => {
                                 width={80}
                                 height={80}
                             /> */}
-                                <advantage.icon size={56} className="m-3" />
-                                <h3 className="h5 mb-3">{advantage.title}</h3>
+                                <advantage.icon size={56} className="m-5" />
+                                <h3 className="h5">{advantage.title}</h3>
                                 <p className="body-2 text-n-5">{advantage.description}</p>
                             </div>
                         </PixelCard>

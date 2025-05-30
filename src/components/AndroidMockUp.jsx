@@ -64,12 +64,17 @@ const AndriodMockUp = () => {
                     <RightLine />
                 </div>
                 <div className="flex justify-center mt-10">
-                    <Button
-                        className="text-xs font-code font-bold  tracking-wider uppercase"
-                        href="#pricing"
+                    <a href="https://play.google.com/store/apps/details?id=com.corise.hearmate"
+                        role="link"
+                        target="_blank"
+                        referrerPolicy="no-referrer"
                     >
-                        Download
-                    </Button>
+                        <Button
+                            className="text-xs font-code font-bold  tracking-wider uppercase"
+
+                        >
+                            Download
+                        </Button></a>
                 </div>
             </div>
         </Section>

@@ -2,15 +2,16 @@
 // import { smallSphere, stars } from "../assets";
 import Button from "./Button";
 import Heading from "./Heading";
+import GooglePlay from "../assets/mockups/google-play-button.svg"
 
 import Section from "./Section";
 import { LeftLine, RightLine } from "./design/Pricing";
 
-import Screen_1 from "../assets/mockups/Frame_1.svg"
-import Screen_2 from "../assets/mockups/Frame_2.svg"
-import Screen_3 from "../assets/mockups/Frame_3.svg"
-import Screen_4 from "../assets/mockups/Frame_4.svg"
-import Screen_5 from "../assets/mockups/Frame_5.svg"
+import Screen_1 from "../assets/mockups/Frame_1.jpg"
+import Screen_2 from "../assets/mockups/Frame_2.jpg"
+import Screen_3 from "../assets/mockups/Frame_3.jpg"
+import Screen_4 from "../assets/mockups/Frame_4.jpg"
+import Screen_5 from "../assets/mockups/Frame_5.jpg"
 
 
 
@@ -52,7 +53,7 @@ const AndriodMockUp = () => {
                     accent="HearMate"
                 />
                 <div className="relative">
-                    <div className="flex flex-wrap md:flex-nowrap items-center justify-center gap-3 md:gap-1">
+                    <div className="flex flex-wrap md:flex-nowrap items-center justify-center gap-3">
                         {MockUps.map((mockup, index) => (
                             <div key={index} className=" lg:h-full h-5/6 overflow-hidden ">
                                 <img src={mockup.mockup} alt={mockup.name} className="h-full w-full object-cover" />
@@ -69,12 +70,8 @@ const AndriodMockUp = () => {
                         target="_blank"
                         referrerPolicy="no-referrer"
                     >
-                        <Button
-                            className="text-xs font-code font-bold  tracking-wider uppercase"
-
-                        >
-                            Download
-                        </Button></a>
+                        <img src={GooglePlay} alt="" className="w-80" />
+                    </a>
                 </div>
             </div>
         </Section>

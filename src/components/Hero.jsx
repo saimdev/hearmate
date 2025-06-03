@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { curve, heroBackground, robot } from "../assets";
+import HeroImg from "../assets/hero/hero.png"
 import Button from "./Button";
 import Section from "./Section";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
@@ -55,7 +56,7 @@ const Hero = () => {
               {/* <div className="h-[1.4rem] bg-n-6 rounded-t-[0.9rem]"></div> */}
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
-                  src={robot}
+                  src={HeroImg}
                   className="aspect-video object-cover w-full h-full rounded-2xl"
                   width={1024}
                   height={490}

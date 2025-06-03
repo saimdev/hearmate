@@ -37,7 +37,7 @@ const PricingList = () => {
                     {item.price}
                   </div>
                   {item.price < 100 && (
-                    <span className="text-n-4 ml-2">/month</span>
+                    <span className="text-n-4 ml-2"></span>
                   )}
                 </div>
               )}

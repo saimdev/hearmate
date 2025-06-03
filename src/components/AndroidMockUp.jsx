@@ -56,7 +56,7 @@ const AndriodMockUp = () => {
                     <div className="flex flex-wrap md:flex-nowrap items-center justify-center gap-3">
                         {MockUps.map((mockup, index) => (
                             <div key={index} className=" lg:h-full h-5/6 overflow-hidden ">
-                                <img src={mockup.mockup} alt={mockup.name} className="h-full w-full object-cover" />
+                                <img src={mockup.mockup} alt={mockup.name} className="h-full w-full object-cover" loading="lazy" />
                             </div  >
                         ))}
 

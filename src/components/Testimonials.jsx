@@ -149,7 +149,7 @@ const Testimonials = () => {
                             {/* <Gradient /> */}
                         </div>
                         <div className="my-3 text-xl">
-                            Luis Rodgriguez,
+                            Luis Rodríguez,
                             Madrid, Spain
                         </div>
                     </div>

@@ -49,11 +49,10 @@ const PricingList = () => {
                 ? " text-color-3"
                 : "bg-n-1 text-color-4 border-2 border-color-4 hover:bg-color-4/10"
                 }`}
-              href={
-                item.price < 100
-                  ? "#pricing"
-                  : "mailto:hearmate.app@gmail.com"
-              }
+              href="https://play.google.com/store/apps/details?id=com.corise.hearmate"
+
+              target="_blank"
+              referrerPolicy="no-referrer"
             >
               {item.price < 100 ? "Get Started" : "Contact Sales"}
             </Button>

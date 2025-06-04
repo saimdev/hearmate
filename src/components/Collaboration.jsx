@@ -35,7 +35,14 @@ const Collaboration = () => {
               </li>
             ))}
           </ul>
-          <Button className="z-[9] text-color-4">Try it now</Button>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.corise.hearmate"
+            target="_blank"
+            referrerPolicy="no-referrer"
+          >
+
+            <Button className="z-[9] text-color-4">Try it to <br /> believe it</Button>
+          </a>
         </div>
 
         <div className="mt-4 lg:ml-auto xl:w-[38rem]">

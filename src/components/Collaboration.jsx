@@ -33,7 +33,7 @@ const Collaboration = () => {
           </p>
 
           <p>
-            HearMate
+            Hearing Aids
           </p>
 
         </h2>

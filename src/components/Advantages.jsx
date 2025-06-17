@@ -6,10 +6,10 @@ import PixelCard from "./design/PixelCard";
 
 const Advantages = () => {
     return (
-        <Section id="advantages">
+        <Section id="merits">
             <div className="container">
                 <Heading
-                    title="Advantages of "
+                    title="Merits of "
                     accent="HearMate"
                     text="HearMate combines commonly available devices with a touch of ingenuity to offer a distinctly personalized experience for its users."
                 />

@@ -68,8 +68,8 @@ export const navigation = [
   },
   {
     id: "1",
-    title: "Solution",
-    url: "#hearing-solutions",
+    title: "Comparison",
+    url: "#comparison",
   },
   // {
   //   id: "1",
@@ -78,8 +78,8 @@ export const navigation = [
   // },
   {
     id: "6",
-    title: "Advantages",
-    url: "#advantages",
+    title: "Merits",
+    url: "#merits",
   },
   {
     id: "6",

@@ -7,14 +7,37 @@ import { LeftCurve, RightCurve } from "./design/Collaboration";
 import webLogo from "../assets/hearmate1.svg"
 import Heading from "./Heading";
 
+import { curve } from "../assets";
+
 const Collaboration = () => {
   return (
-    <Section id="hearing-solutions">
-      <Heading
-        className="container md:max-w-md lg:max-w-2xl"
-        title="Hearing Aids vs "
-        accent="HearMate"
-      />
+    <Section id="comparison">
+
+
+      <div
+        className={`container md:max-w-md lg:max-w-2xl max-w-[50rem] mx-auto mb-12 lg:mb-20 md:text-center`}
+      >
+        <h2 className="h2 space-y-3">
+          <span className="inline-block relative">
+            <span style={{ color: "#B84646" }}>Hear</span>
+            <span className="text-[#0058A5]">Mate</span>
+            <img
+              src={curve}
+              className="absolute top-full left-0 w-full xl:-mt-2"
+              width={624}
+              height={28}
+              alt="Curve"
+            /></span>
+          <p>
+            VS
+          </p>
+
+          <p>
+            HearMate
+          </p>
+
+        </h2>
+      </div>
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
           <h4 className="h2 mb-4 md:mb-8">

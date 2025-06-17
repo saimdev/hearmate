@@ -28,8 +28,8 @@ const Footer = () => {
                   alt="Curve"
                 /></span>
               <p className="caption">
-                <a href="mailto:info@hearmate.app" className="text-[#5DCA76]">
-                  info@hearmate.app
+                <a href="mailto:info@hearmate.com" className="text-gray-700 hover:underline">
+                  info@hearmate.com
                 </a>
               </p>
             </div>

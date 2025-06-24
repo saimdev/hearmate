@@ -7,9 +7,12 @@ import HeroImg1 from "../assets/hero/hero1.jpg";
 import HeroImg2 from "../assets/hero/hero2.jpg";
 import HeroImg3 from "../assets/hero/hero3.jpg";
 import HeroImg4 from "../assets/hero/hero4.jpg";
+import HeroImg5 from "../assets/hero/hero5.jpg";
+import HeroImg6 from "../assets/hero/hero6.jpg";
+import HeroImg7 from "../assets/hero/hero7.jpg";
 import CompanyLogos from "./CompanyLogos";
 
-const heroImages = [HeroImg, HeroImg1, HeroImg2, HeroImg3, HeroImg4];
+const heroImages = [HeroImg, HeroImg1, HeroImg2, HeroImg3, HeroImg4, HeroImg5, HeroImg6, HeroImg7];
 
 const Hero = () => {
   const parallaxRef = useRef();

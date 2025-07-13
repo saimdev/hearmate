@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
+import typography from "@tailwindcss/typography"
 
 export default {
   content: [
@@ -97,7 +98,7 @@ export default {
       },
     },
   },
-  plugins: [
+  plugins: [typography,
     plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({});
       addComponents({

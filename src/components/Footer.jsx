@@ -56,7 +56,7 @@ const Footer = () => {
         </ul>
       </div>
       <p className="caption text-n-4 lg:block text-center mt-10">
-        Powered by <a href="https://www.thecorise.com">Corise</a> ©{" "}
+        Powered by <a href="https://bestel.tech/" target="_blank">BesTel</a> ©{" "}
         {new Date().getFullYear()}. All rights reserved.
       </p>
     </Section>

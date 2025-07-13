@@ -96,6 +96,11 @@ export const navigation = [
     title: "Reviews",
     url: "#testimonials",
   },
+  {
+    id: "6",
+    title: "Blogs",
+    url: "/blogs",
+  },
   // {
   //   id: "4",
   //   title: "New account",

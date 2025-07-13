@@ -36,7 +36,7 @@ const Advantages = () => {
                     ))}
                 </div>
 
-                <Gradient />
+                {/* <Gradient /> */}
             </div>
         </Section>
     );

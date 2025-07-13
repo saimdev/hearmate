@@ -78,7 +78,7 @@ const Services = () => {
 
           {/* Service 3 */}
         </div>
-        <Gradient />
+        {/* <Gradient /> */}
       </div>
       {/* </div> */}
     </Section>

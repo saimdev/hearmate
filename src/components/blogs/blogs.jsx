@@ -4,6 +4,7 @@ import { curve } from "@/assets";
 import BlogCard from './blog-card';
 import { useQuery } from '@tanstack/react-query';
 import { getBlogs } from '../../apis/blogs/blogApi';
+import { BackgroundCircles, BottomLine, Gradient } from "@/components/design/Hero";
 
 
 const Blogs = () => {
@@ -57,6 +58,7 @@ const Blogs = () => {
             crossesOffset="lg:translate-y-[5.25rem]"
         >
             <div className='container mx-auto min-h-[calc(100vh-80px)] md:pt-24 '>
+
                 {/* Heading */}
                 <div className='text-center py-4'>
                     <h3 className='h4 md:h3'>
@@ -77,17 +79,19 @@ const Blogs = () => {
                 </div>
 
                 {/* Blogs */}
-
-                <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 py-10 pt-20">
-                    {blogPosts?.map((blog) => (
-                        <BlogCard
-                            key={blog._id}
-                            id={blog._id}
-                            title={blog.title}
-                            siteName={blog.siteName}
-                            createdAt={blog.createdAt}
-                        />
-                    ))}
+                <div className="relative mx-auto md:max-w-5xl xl:mb-24 mt-20">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 py-10 pt-20">
+                        {blogPosts?.map((blog) => (
+                            <BlogCard
+                                key={blog._id}
+                                id={blog._id}
+                                title={blog.title}
+                                siteName={blog.siteName}
+                                createdAt={blog.createdAt}
+                            />
+                        ))}
+                    </div>
+                    <BackgroundCircles />
                 </div>
             </div>
         </Section >

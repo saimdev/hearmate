@@ -2,55 +2,46 @@ import React from 'react'
 import Section from '../Section'
 import { curve } from "@/assets";
 import BlogCard from './blog-card';
-import { useQuery } from '@tanstack/react-query';
+import { useInfiniteQuery, useQuery } from '@tanstack/react-query';
 import { getBlogs } from '../../apis/blogs/blogApi';
 import { BackgroundCircles, BottomLine, Gradient } from "@/components/design/Hero";
+import { useInView } from 'react-intersection-observer';
+
 
 
 const Blogs = () => {
 
+    const { ref, inView } = useInView();
 
-    const { data, isPending } = useQuery({
+    const {
+        data,
+        fetchNextPage,
+        hasNextPage,
+        isFetchingNextPage,
+    } = useInfiniteQuery({
         queryKey: ["hearmate-blogs"],
-        queryFn: getBlogs
-    })
+        queryFn: getBlogs,
+        getNextPageParam: (lastPage) => {
+            const { currentPage, totalPages } = lastPage.pagination;
+            // ✅ only fetch if currentPage < totalPages
+            if (currentPage < totalPages) {
+                return currentPage + 1;
+            }
+            return undefined; // stops infinite loop
+        },
+    });
 
-    console.log(data)
 
-    // const blogPosts = [
-    //     {
-    //         id: "asdasd",
-    //         title: "Understanding JavaScript Closures",
-    //         siteName: "Fitxol",
-    //         createdAt: "2025-07-01T10:30:00Z",
-    //     },
-    //     {
-    //         id: "Asdasd",
-    //         title: "A Beginner's Guide to CSS Flexbox",
-    //         siteName: "Fitxol",
-    //         createdAt: "2025-06-20T14:15:00Z",
-    //     },
-    //     {
-    //         id: "asduhxc",
-    //         title: "10 Productivity Tips for Developers",
-    //         siteName: "Hearmate",
-    //         createdAt: "2025-05-12T08:00:00Z",
-    //     },
-    //     {
-    //         id: "adjahsdkjzz",
-    //         title: "Mastering React Hooks in 2025",
-    //         siteName: "Hearmate",
-    //         createdAt: "2025-07-05T16:45:00Z",
-    //     },
-    //     {
-    //         id: "asdjahkjsd",
-    //         title: "Exploring Node.js Streams",
-    //         siteName: "Fitxol",
-    //         createdAt: "2025-04-28T11:20:00Z",
-    //     },
-    // ];
+    const blogs = data?.pages.flatMap(page => page.data) ?? [];
+    // auto load next page when bottom div is visible
+    React.useEffect(() => {
+        if (inView && hasNextPage) {
+            fetchNextPage();
+        }
+    }, [inView, hasNextPage, fetchNextPage]);
 
-    const blogPosts = data?.data;
+
+    // const blogPosts = data?.data;
     return (
         <Section
             id="hero"
@@ -80,17 +71,25 @@ const Blogs = () => {
 
                 {/* Blogs */}
                 <div className="relative mx-auto md:max-w-5xl xl:mb-24 mt-20">
-                    <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 py-10 pt-20">
-                        {blogPosts?.map((blog) => (
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 py-10 pt-20">
+                        {blogs?.map((blog) => (
                             <BlogCard
                                 key={blog._id}
                                 id={blog._id}
                                 title={blog.title}
                                 siteName={blog.siteName}
+                                coverImg={blog.cover_image}
                                 createdAt={blog.createdAt}
                             />
                         ))}
                     </div>
+                    {hasNextPage ? (
+                        <div ref={ref} className="text-center py-6">
+                            {isFetchingNextPage ? "Loading more..." : "Scroll to load more"}
+                        </div>
+                    ) : (
+                        <div className="text-center py-6">No more blogs</div>
+                    )}
                     <BackgroundCircles />
                 </div>
             </div>

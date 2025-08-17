@@ -3,7 +3,8 @@ import api from "../axios-instance";
 export const getBlogs = async () => {
     const response = await api.get("/blogs", {
         params: {
-            type: "hearmate"
+            type: "hearmate",
+            is_active: true,
         }
     })
 
